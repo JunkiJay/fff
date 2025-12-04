@@ -32,21 +32,40 @@ class CascadePaymentProvider extends PaymentProvider
             try {
                 $result = PayThoughtProviderAction::run($payment);
 
+                // Если получили реквизиты СБП - сразу возвращаем их
                 if ($result instanceof PaymentShowSBPResult) {
-                    Log::error("Show SBP", ['data' => $result]);
+                    Log::info("Cascade: SBP result from {$item->value}", [
+                        'provider' => $item->value,
+                        'payment_id' => $payment->id,
+                        'phone' => $result->phone ?? null,
+                        'amount' => $result->amount ?? null
+                    ]);
+                    $payment->save();
+                    return $result;
                 }
 
+                // Если ошибка - логируем и пробуем следующий провайдер
                 if ($result instanceof PaymentErrorResult) {
                     $errors[] = $result->error;
-
-                    Log::error('Cascade payment error', ['error' => $result->error]);
+                    Log::warning('Cascade payment error', [
+                        'provider' => $item->value,
+                        'error' => $result->error,
+                        'payment_id' => $payment->id
+                    ]);
                     continue;
                 }
+                
+                // Если успешный результат (редирект) - возвращаем его
                 $payment->save();
-
                 return $result;
             } catch (\Throwable $e) {
-                Log::error('Cascade payment error', ['error' => $e->getMessage(), 'exception' => $e]);
+                Log::error('Cascade payment exception', [
+                    'provider' => $item->value,
+                    'error' => $e->getMessage(),
+                    'payment_id' => $payment->id,
+                    'exception' => $e
+                ]);
+                // Продолжаем к следующему провайдеру
             }
         }
 

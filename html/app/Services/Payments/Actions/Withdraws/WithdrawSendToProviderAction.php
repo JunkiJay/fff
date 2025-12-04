@@ -63,6 +63,16 @@ class WithdrawSendToProviderAction extends Action
             return new WithdrawResult(true, WithdrawStatusEnum::CREATE);
         }
 
+        // Убеждаемся, что всегда возвращаем WithdrawResult
+        if (!$result instanceof WithdrawResult) {
+            Log::error('WithdrawSendToProviderAction: unexpected result type', [
+                'withdraw_id' => $withdraw->id,
+                'result_type' => gettype($result),
+                'result' => $result
+            ]);
+            return new WithdrawResult(false, WithdrawStatusEnum::CREATE, 'Неожиданная ошибка при обработке вывода');
+        }
+
         return $result;
     }
 

@@ -48,7 +48,11 @@ class CryptobotPaymentProvider extends PaymentProvider
     public function pay(Payment $payment): PaymentRedirectResult
     {
         $request = new CryptobotCreateInvoceRequest(
-            $this->reduceAmountByBonusPercents($payment),
+            // ВАЖНО:
+            //  - $payment->sum здесь — это сумма, которую ввёл пользователь (например, 10₽)
+            //  - бонус (+10%) начисляется только в callback на баланс,
+            //    поэтому провайдеру отправляем ИМЕННО эту сумму, без вычитания бонуса
+            $payment->sum,
             'USDT',
             (string)$payment->id
         );

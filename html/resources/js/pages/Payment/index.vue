@@ -516,13 +516,29 @@ export default {
     },
 
     created() {
-        this.fetchUserPayment();
-        this.fetchPaymentMethods({ userId: this.user.id });
+        // Если пользователь уже загружен — сразу инициализируем методы и историю
+        if (this.user && this.user.id) {
+            this.fetchUserPayment();
+            this.fetchPaymentMethods({ userId: this.user.id });
+        }
     },
     beforeDestroy() {
         clearInterval(this.timer);
         window.removeEventListener("resize", this.handleResize);
 
+    },
+
+    watch: {
+        // Как только пользователь появляется после логина — подгружаем историю и методы
+        user: {
+            handler(newUser, oldUser) {
+                if ((!oldUser || !oldUser.id) && newUser && newUser.id) {
+                    this.fetchUserPayment();
+                    this.fetchPaymentMethods({ userId: newUser.id });
+                }
+            },
+            deep: false,
+        },
     },
     computed: {
         ...mapState(["user"]),

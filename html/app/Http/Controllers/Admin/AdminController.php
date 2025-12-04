@@ -157,44 +157,61 @@ class AdminController extends Controller
                 break;
 
             case 'withdraws':
-                $search = $request->input('search.value');
-                $request->request->remove('search');
-
-                $query = Withdraw::where('status', $request->status);
-
-                if ($search !== null && $search !== '') {
-                    $query->where(function ($q) use ($search) {
-                        if (ctype_digit($search)) {
-                            $q->orWhere('withdraws.id', (int) $search);
-                        }
-                        $q->orWhereRaw('CAST(withdraws.id AS CHAR) LIKE ?', ["%{$search}%"]);
-                        $q->orWhereRaw('username LIKE ?', ["%{$search}%"]);
-                        $q->orWhereRaw('wallet LIKE ?', ["%{$search}%"]);
-                        $q->orWhereRaw('`system` LIKE ?', ["%{$search}%"]);
-                        $q->orWhereRaw('CAST(withdraws.created_at AS CHAR) LIKE ?', ["%{$search}%"]);
-                    });
-                }
-
-
-                if ($request->status == 2 && $request->reason == true) {
-                    $withdraws = $query
-                        ->whereNotNull('reason')
+                try {
+                    $query = Withdraw::query()
+                        ->where('withdraws.status', $request->status ?? 0)
                         ->join('users', 'users.id', '=', 'withdraws.user_id')
                         ->select('users.id as user_id', 'users.username as username', 'withdraws.*')
-                        ->where('users.is_youtuber', '<', 1)
-                        ->get();
-                } else {
-                    $withdraws = $query
-                        ->join('users', 'users.id', '=', 'withdraws.user_id')
-                        ->select('users.id as user_id', 'users.username as username', 'withdraws.*')
-                        ->where('users.is_youtuber', '<', 1)
-                        ->get();
-                }
+                        ->where('users.is_youtuber', '<', 1);
 
-                return Datatables::of($withdraws)
-                    ->addColumn('usdt', fn(\App\Models\Withdraw $w) => $w->usdt)
-                    ->addColumn('image', fn(\App\Models\Withdraw $w) => $w->image)
-                    ->make(true);
+                    if ($request->status == 2 && $request->input('reason') == true) {
+                        $query->whereNotNull('withdraws.reason');
+                    }
+
+                    return datatables()->eloquent($query)
+                        ->addColumn('usdt', function(\App\Models\Withdraw $w) {
+                            return $w->usdt ?? 0;
+                        })
+                        ->addColumn('image', function(\App\Models\Withdraw $w) {
+                            return $w->image ?? '';
+                        })
+                        ->addColumn('variant', function(\App\Models\Withdraw $w) {
+                            return $w->variant ?? null;
+                        })
+                        ->addColumn('method', function(\App\Models\Withdraw $w) {
+                            // Возвращаем method как строку (значение enum)
+                            return $w->method ? $w->method->value : null;
+                        })
+                        ->filterColumn('username', function($query, $keyword) {
+                            $query->whereRaw('users.username LIKE ?', ["%{$keyword}%"]);
+                        })
+                        ->filterColumn('wallet', function($query, $keyword) {
+                            $query->whereRaw('withdraws.wallet LIKE ?', ["%{$keyword}%"]);
+                        })
+                        ->filterColumn('system', function($query, $keyword) {
+                            $query->whereRaw('withdraws.system LIKE ?', ["%{$keyword}%"]);
+                        })
+                        ->filterColumn('id', function($query, $keyword) {
+                            if (ctype_digit($keyword)) {
+                                $query->where('withdraws.id', (int) $keyword);
+                            } else {
+                                $query->whereRaw('CAST(withdraws.id AS CHAR) LIKE ?', ["%{$keyword}%"]);
+                            }
+                        })
+                        ->toJson();
+                } catch (\Exception $e) {
+                    Log::error('DataTables withdraws error', [
+                        'error' => $e->getMessage(),
+                        'trace' => $e->getTraceAsString()
+                    ]);
+                    return response()->json([
+                        'draw' => $request->input('draw', 0),
+                        'recordsTotal' => 0,
+                        'recordsFiltered' => 0,
+                        'data' => [],
+                        'error' => 'Ошибка загрузки данных: ' . $e->getMessage()
+                    ], 500);
+                }
                 break;
         }
     }

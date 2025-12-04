@@ -9,11 +9,9 @@
                 ref="inputRef" 
                 type="text" 
                 :placeholder="placeholder" 
-                :value="internalValue" 
-                @input="handleInput"
-                @blur="updateModelValue" 
-                @keyup.enter="updateModelValue"
-                class="flex-1 font-normal min-w-0 block w-full px-3 py-2 text-[var(--color-text)] rounded-none bg-[#2E2A3640] rounded-l-md border border-[#CED4DA40] outline-none" 
+                :value="internalValue"
+                readonly
+                class="flex-1 font-normal min-w-0 block w-full px-3 py-2 text-[var(--color-text)] rounded-none bg-[#2E2A3640] rounded-l-md border border-[#CED4DA40] outline-none cursor-default select-all" 
             />
 
             <button 

@@ -14,19 +14,37 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onUnmounted, getCurrentInstance } from 'vue';
 import DepositConfirmation from "./modals/DepositConfirmation.vue";
-import socket from "@/plugins/socket";
 
 const showDepositConfirmation = ref(false);
 const depositAmount = ref(0);
 
+const instance = getCurrentInstance();
+const emitter = instance?.appContext.config.globalProperties.$emitter;
+
 onMounted(() => {
-  socket.on('depositConfirmation', (data) => {
-    console.log('Получено событие depositConfirmation', data);
-    depositAmount.value = data.data.amount || 0;
-    showDepositConfirmation.value = true;
-  });
+  // Слушаем событие depositConfirmation через emitter (отправляется из app.js)
+  if (emitter) {
+    emitter.on('depositConfirmation', (data: any) => {
+      console.log('📬 Footer: получено событие depositConfirmation', data);
+      depositAmount.value = data.amount || 0;
+      showDepositConfirmation.value = true;
+    });
+    
+    emitter.on('withdrawConfirmation', (data: any) => {
+      console.log('📬 Footer: получено событие withdrawConfirmation', data);
+      // Можно добавить модалку для вывода, если нужно
+    });
+  }
+});
+
+onUnmounted(() => {
+  // Очищаем слушатели при размонтировании
+  if (emitter) {
+    emitter.off('depositConfirmation');
+    emitter.off('withdrawConfirmation');
+  }
 });
 </script>
 

@@ -62,7 +62,7 @@ class Kernel extends HttpKernel
             EncryptCookies::class,
             AddQueuedCookiesToResponse::class,
             StartSession::class,
-            ForceMaintenanceMode::class, // Техработы с паролем (после StartSession для работы сессий)
+            ForceMaintenanceMode::class, // Техработы ВКЛЮЧЕНЫ (IP + пароль)
             // \Illuminate\Session\Middleware\AuthenticateSession::class,
             ShareErrorsFromSession::class,
             VerifyCsrfToken::class,

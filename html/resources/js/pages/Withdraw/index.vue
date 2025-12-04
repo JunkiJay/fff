@@ -304,8 +304,14 @@ export default {
         },
     },
     created() {
-        this.fetchPaymentMethods({userId: this.user.id})
-        this.fetchUserWithdraws()
+        // Защита от ситуации, когда user ещё не загружен
+        if (!this.user || !this.user.id) {
+            console.warn("Withdraw page: user is not loaded yet, delaying init");
+            return;
+        }
+
+        this.fetchPaymentMethods({ userId: this.user.id });
+        this.fetchUserWithdraws();
     },
 };
 </script>

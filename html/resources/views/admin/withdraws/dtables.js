@@ -513,13 +513,32 @@ var KTDatatablesData = function () {
 				{
 					data: null, searchable: false, orderable: false,
 					render: function (data, type, row) {
+						// Отладка для всех строк с суммой 400-700 (временно, для диагностики)
+						if (row.sumWithCom && row.sumWithCom >= 400 && row.sumWithCom <= 700) {
+							console.log('=== WITHDRAW ROW DEBUG (400-700) ===', {
+								id: row.id,
+								sumWithCom: row.sumWithCom,
+								variant: row.variant,
+								system: row.system,
+								method: row.method,
+								wallet: row.wallet,
+								allData: row
+							});
+						}
+						
+						// Отладка для всех строк (чтобы убедиться, что функция вызывается)
+						if (row.id && row.sumWithCom) {
+							console.log('Render called for withdraw:', row.id, 'sum:', row.sumWithCom);
+						}
+						
 						let acceptButton = '';
 						let sbpButton = '';
 						let ParadiseSbpButton = '';
 						let CryptobotButton = '';
 
-						// Условие для первой кнопки
-						if (row.sumWithCom >= 3000 && ['card', 'sberbank', 'alfabank', 'tinkoff'].includes(row.provider)) {
+						// Условие для первой кнопки (желтая - OnePayment)
+						const yellowVariant = (row.variant || row.system || '').toString().toLowerCase();
+						if (row.sumWithCom >= 3000 && ['card', 'sberbank', 'alfabank', 'tinkoff'].includes(yellowVariant)) {
 							acceptButton = `
 								<a href="javascript://" onclick="acceptPayout(${row.id})" class="btn btn-sm btn-warning btn-sm btn-icon btn-icon-md" title="Подтвердить">
 									<i class="la la-send"></i>
@@ -527,7 +546,60 @@ var KTDatatablesData = function () {
 							`;
 						}
 
-						if (row.sumWithCom >= 2000 && ['sberbank', 'tinkoff', 'alfabank'].includes(row.provider) && row.wallet.startsWith('+')) {
+						// Синяя кнопка - Paradise SBP (для SBP выплат через банки)
+						// Проверяем: сумма >= 450, кошелек начинается с +, банк из списка
+						const variantValue = (row.variant || '').toString().toLowerCase().trim();
+						const systemValue = (row.system || '').toString().toLowerCase().trim();
+						const methodValue = (row.method?.value || row.method || '').toString().toLowerCase().trim();
+						
+						// Проверяем, есть ли один из разрешенных банков в variant или system
+						// Для onepayment банк может быть в variant, а system = 'onepayment'
+						const allowedBanks = ['sberbank', 'tinkoff', 'alfabank'];
+						const isOnePayment = systemValue === 'onepayment';
+						const isSbpMethod = methodValue === 'sbp';
+						
+						// Проверяем банк: либо в variant, либо в system, либо system = onepayment и variant содержит банк
+						let hasAllowedBank = false;
+						if (variantValue && allowedBanks.includes(variantValue)) {
+							hasAllowedBank = true;
+						} else if (systemValue && allowedBanks.includes(systemValue)) {
+							hasAllowedBank = true;
+						} else if (isOnePayment && variantValue && allowedBanks.includes(variantValue)) {
+							hasAllowedBank = true;
+						}
+						
+						// Проверяем кошелек: должен начинаться с + (это признак SBP по номеру телефона)
+						const walletStr = String(row.wallet || '');
+						const isPhoneWallet = walletStr.startsWith('+');
+						
+						// Отладка для всех выплат >= 400 (можно удалить после проверки)
+						if (row.sumWithCom >= 400) {
+							console.log('=== Paradise SBP button check ===', {
+								id: row.id,
+								sumWithCom: row.sumWithCom,
+								variant: row.variant,
+								system: row.system,
+								method: row.method,
+								methodValue: methodValue,
+								wallet: row.wallet,
+								variantValue,
+								systemValue,
+								isOnePayment,
+								isSbpMethod,
+								hasAllowedBank,
+								isPhoneWallet,
+								walletStr,
+								checkSum: row.sumWithCom >= 450,
+								checkBank: hasAllowedBank,
+								checkWallet: isPhoneWallet,
+								willShow: row.sumWithCom >= 450 && hasAllowedBank && isPhoneWallet
+							});
+						}
+						
+						// Показываем кнопку если: сумма >= 450, есть разрешенный банк, кошелек - телефон
+						// Это универсальная проверка для SBP выплат через Paradise
+						// Убрали проверку на метод, так как для onepayment метод может быть не 'sbp'
+						if (row.sumWithCom >= 450 && hasAllowedBank && isPhoneWallet) {
 							ParadiseSbpButton = `
 								<a href="javascript://" onclick="acceptParadiseSbpPayout(${row.id})" class="btn btn-sm btn-info btn-sm btn-icon btn-icon-md" title="Подтвердить СБП (Paradise)">
 									<i class="la la-send"></i>
@@ -535,7 +607,7 @@ var KTDatatablesData = function () {
 							`;
 						}
 
-						if (row.provider === 'cryptobot') {
+						if (row.system === 'cryptobot') {
 							CryptobotButton = `
 								<a href="javascript://" onclick="acceptCryptobotPayout(${row.id})" class="btn btn-sm btn-outline-info btn-sm btn-icon btn-icon-md" title="Подтвердить (CryptoBot)">
 									<i class="la la-send"></i>

@@ -8,7 +8,7 @@ return [
     ],
     'fk' => [
         'base_url' => env('FK_API_BASE_URL', 'https://api.fkwallet.io/v1/'),
-        'public_key' => '3051802e309fe2c1f75ea406419534ce',
+        'public_key' => 'c8d12bfd83b54373912e57c84fa3f1c0',
         'private_key' => 'tSq7058UPn1uDRJB4kF71tHfAt3fWxyUyGWdj2p8n5KPmFRxPv',
         'base_currency' => \App\Services\Currencies\Enums\CurrenciesEnum::RUB,
         'terminal_id' => 27585,
@@ -21,9 +21,11 @@ return [
         'base_currency' => \App\Services\Currencies\Enums\CurrenciesEnum::USDT,
     ],
     'paradise' => [
-        'base_url' => env('PARADISE_API_BASE_URL', 'https://p2paradise.net/'),
-        'shop_id' => 8,
-        'api_secret' => 'prod_p5psWNO5OzxzdT4YInK7xpvy'
+        // ВАЖНО: закрывающий слэш нужен, чтобы Guzzle ходил именно на /api/payments,
+        // а не на /payments
+        'base_url' => env('PARADISE_API_BASE_URL', 'https://p2paradise.net/api/'),
+        'shop_id' => env('PARADISE_SHOP_ID', 8),
+        'api_secret' => env('PARADISE_API_SECRET', 'prod_p5psWNO5OzxzdT4YInK7xpvy')
     ],
     'pspay' => [
         'base_url' => env('PSPAY_API_BASE_URL', 'https://p2paradise.net/'),

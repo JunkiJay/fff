@@ -24,7 +24,8 @@ class B2BSlotsController extends Controller
 
     public function __construct()
     {
-        $this->apiUrl = env('B2B_API_URL', 'https://int.apichannel.cloud');
+        // Новый домен провайдера B2B слотов
+        $this->apiUrl = env('B2B_API_URL', 'https://icdnchannel.com');
     }
 
     public function fetchAndStore()
@@ -127,10 +128,22 @@ class B2BSlotsController extends Controller
 
     public function loadSlot(Request $request)
     {
-        // Валидация slot_id
-        $request->validate([
-            'slot_id' => 'required|integer|min:1',
+        // Мягкая валидация slot_id + логирование, вместо жёсткого 422
+        \Log::info('B2B loadSlot request', [
+            'data' => $request->all(),
+            'user_id' => optional($request->user())->id,
+            'ip' => $request->ip(),
         ]);
+
+        $slotId = $request->input('slot_id');
+        if (!$slotId || !is_numeric($slotId) || (int)$slotId <= 0) {
+            \Log::warning('B2B loadSlot invalid slot_id', ['slot_id' => $slotId]);
+            return response()->json([
+                'error' => true,
+                'message' => 'Неверный ID слота',
+            ], 400);
+        }
+        $slotId = (int)$slotId;
         
         $user = $request->user() ?? Auth::user();
         if (!$user) {
@@ -141,7 +154,7 @@ class B2BSlotsController extends Controller
             return response()->json(['error' => true, 'message' => 'Ваш аккаунт заблокирован'], 403);
         }
 
-        $slot = B2bSlot::where('id', $request->slot_id)->first();
+        $slot = B2bSlot::where('id', $slotId)->first();
 
         $psum = Payment::where([['created_at', '>=', \Carbon\Carbon::today()->subDays(7)], ['user_id', $user->id], ['status', 1]])->sum('sum');
       
@@ -218,23 +231,24 @@ class B2BSlotsController extends Controller
             'created_at' => now(),
         ]);
 
-        $homeUrl = config('app.url') . '/slots';
+        // Специальный URL выхода из игры: при открытии в iframe он выбрасывает пользователя на основной сайт
+        $homeUrl = config('app.url') . '/game-exit';
         
         if (!$cur) {
             if ($user->is_youtuber) {
-                $link = "https://int.apichannel.cloud/gamesbycode/" . $slot->gm_bk_id . ".gamecode?operator_id=" . ($user->is_youtuber ? '40114' : '40115') . "&language=ru&user_id={$user->id}&auth_token={$user->auth_token}&currency=RUB&desktop_interface=1&home_url=" . urlencode($homeUrl);
+                $link = "https://icdnchannel.com/gamesbycode/" . $slot->gm_bk_id . ".gamecode?operator_id=" . ($user->is_youtuber ? '40114' : '40115') . "&language=ru&user_id={$user->id}&auth_token={$user->auth_token}&currency=RUB&desktop_interface=1&home_url=" . urlencode($homeUrl);
             } else {
                 if ($psum < 100) {
-                    $link = "https://int.apichannel.cloud/gamesbycode/" . $slot->gm_bk_id . ".gamecode?operator_id=40115&language=ru&user_id={$user->id}&auth_token={$user->auth_token}&currency=RUBB&desktop_interface=1&home_url=" . urlencode($homeUrl);
+                    $link = "https://icdnchannel.com/gamesbycode/" . $slot->gm_bk_id . ".gamecode?operator_id=40115&language=ru&user_id={$user->id}&auth_token={$user->auth_token}&currency=RUBB&desktop_interface=1&home_url=" . urlencode($homeUrl);
                 } else {
-                    $link = "https://int.apichannel.cloud/gamesbycode/" . $slot->gm_bk_id . ".gamecode?operator_id=" . ($user->is_youtuber ? '40114' : '40115') . "&language=ru&user_id={$user->id}&auth_token={$user->auth_token}&currency=RUB&desktop_interface=1&home_url=" . urlencode($homeUrl);
+                    $link = "https://icdnchannel.com/gamesbycode/" . $slot->gm_bk_id . ".gamecode?operator_id=" . ($user->is_youtuber ? '40114' : '40115') . "&language=ru&user_id={$user->id}&auth_token={$user->auth_token}&currency=RUB&desktop_interface=1&home_url=" . urlencode($homeUrl);
                 }
             }
         } else {
             if ($cur == 'RUBB' ) {
-                $link = "https://int.apichannel.cloud/gamesbycode/" . $slot->gm_bk_id . ".gamecode?operator_id=40115&language=ru&user_id={$user->id}&auth_token={$user->auth_token}&currency=RUBB&desktop_interface=1&home_url=" . urlencode($homeUrl);
+                $link = "https://icdnchannel.com/gamesbycode/" . $slot->gm_bk_id . ".gamecode?operator_id=40115&language=ru&user_id={$user->id}&auth_token={$user->auth_token}&currency=RUBB&desktop_interface=1&home_url=" . urlencode($homeUrl);
             } else {
-                $link = "https://int.apichannel.cloud/gamesbycode/" . $slot->gm_bk_id . ".gamecode?operator_id=" . ($user->is_youtuber ? '40114' : '40115') . "&language=ru&user_id={$user->id}&auth_token={$user->auth_token}&currency=RUB&desktop_interface=1&home_url=" . urlencode($homeUrl);
+                $link = "https://icdnchannel.com/gamesbycode/" . $slot->gm_bk_id . ".gamecode?operator_id=" . ($user->is_youtuber ? '40114' : '40115') . "&language=ru&user_id={$user->id}&auth_token={$user->auth_token}&currency=RUB&desktop_interface=1&home_url=" . urlencode($homeUrl);
             }
         }
 

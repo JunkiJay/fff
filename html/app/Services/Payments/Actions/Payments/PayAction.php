@@ -53,18 +53,30 @@ class PayAction extends Action
 
         $amount = $dto->amount;
 
-        if ($method->bonusPercent) {
-            $amount = ($amount / 100 * $method->bonusPercent) + $amount;
+        // Если есть bonusPercent у метода, добавляем его к bonus (если нет промокода)
+        if ($method->bonusPercent && $bonus == 0) {
+            $bonus = $method->bonusPercent;
         }
 
         $payment = Payment::create([
             'user_id' => $dto->user->id,
-            'sum' => $amount,
-            'bonus' => $bonus,
+            'sum' => $amount, // Исходная сумма БЕЗ бонусов
+            'bonus' => $bonus, // Процент бонуса (из промокода или bonusPercent метода)
             'wager' => $wager,
             'system' => $dto->provider->value,
             'method' => $dto->method,
             'status' => PaymentStatusEnum::PENDING,
+        ]);
+
+        // Логируем для диагностики
+        \Log::info('PayAction: payment created', [
+            'payment_id' => $payment->id,
+            'user_id' => $dto->user->id,
+            'amount' => $amount,
+            'bonus' => $bonus,
+            'bonus_percent' => $method->bonusPercent ?? null,
+            'provider' => $dto->provider->value,
+            'method' => $dto->method->value,
         ]);
 
         $result = PayThoughtProviderAction::run($payment);

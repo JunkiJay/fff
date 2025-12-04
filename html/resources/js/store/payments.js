@@ -20,7 +20,11 @@ const getters = {
         s.providers.forEach((provider) => {
             if (provider.payment !== undefined && Array.isArray(provider.payment)) {
                 provider.payment.forEach((payment) => {
+                    if (!payment || !payment.method) return;
+                    
                     const method = s.methods[payment.method];
+                    if (!method) return;
+                    
                     available.push(
                         {
                             title: method.title,
@@ -44,7 +48,10 @@ const getters = {
         s.providers.forEach((provider) => {
             if (provider.withdraw !== undefined && Array.isArray(provider.withdraw)) {
                 provider.withdraw.forEach((withdraw) => {
+                    if (!withdraw || !withdraw.method) return;
+                    
                     const method = s.methods[withdraw.method];
+                    if (!method) return;
 
                     let data = {
                         title: method.title,
@@ -58,7 +65,7 @@ const getters = {
                         wallet_input_title: method.wallet_input_title,
                         wallet_input_placeholder: method.wallet_input_placeholder
                     };
-                    if (withdraw.variants.length) {
+                    if (withdraw.variants && Array.isArray(withdraw.variants) && withdraw.variants.length) {
                         data.variants = withdraw.variants;
                     }
 
@@ -66,7 +73,6 @@ const getters = {
                 });
             }
         });
-        console.log(available)
         return available;
     }
 };
@@ -186,8 +192,7 @@ const actions = {
                     "image",
                     "system",
                     "status",
-                    "status_huma" +
-                    "n_name",
+                    "status_human_name",
                     "created_at"
                 ],
                 "limit": 200,

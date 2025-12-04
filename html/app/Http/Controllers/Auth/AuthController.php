@@ -81,18 +81,82 @@ class AuthController extends Controller
     public function login(Request $request)
     {
 
-        $credentials = $request->only('email', 'password');
+        // Базовая валидация входных данных
+        $validator = Validator::make($request->all(), [
+            'email' => 'required|string|email',
+            'password' => 'required|string',
+        ]);
 
-        if (Auth::attempt($credentials)) {
+        if ($validator->fails()) {
+            \Log::warning('Auth login validation failed', [
+                'errors' => $validator->errors()->toArray(),
+                'ip' => $request->ip(),
+            ]);
+
+            return response()->json($validator->errors(), 422);
+        }
+
+        $credentials = $request->only('email', 'password');
+        $password = (string)$request->input('password', '');
+
+        // Учитываем флаг "Запомнить меня" для устойчивой авторизации
+        $remember = (bool)$request->get('remember', false);
+
+        // Логируем попытку входа (без пароля)
+        \Log::info('Auth login attempt', [
+            'email' => $credentials['email'] ?? null,
+            'password_length' => mb_strlen($password),
+            'remember' => $remember,
+            'ip' => $request->ip(),
+            'user_agent' => $request->userAgent(),
+        ]);
+
+        // Дополнительная диагностика: существует ли пользователь и подходит ли пароль
+        $user = User::where('email', $credentials['email'])->first();
+        if (!$user) {
+            \Log::warning('Auth login diagnostics: user not found', [
+                'email' => $credentials['email'],
+                'ip' => $request->ip(),
+            ]);
+        } else {
+            try {
+                $passwordOk = \Illuminate\Support\Facades\Hash::check($password, $user->password);
+            } catch (\Throwable $e) {
+                $passwordOk = false;
+                \Log::error('Auth login diagnostics: Hash::check exception', [
+                    'email' => $credentials['email'],
+                    'error' => $e->getMessage(),
+                ]);
+            }
+
+            \Log::info('Auth login diagnostics: user found', [
+                'user_id' => $user->id,
+                'email' => $user->email,
+                'password_match' => $passwordOk,
+            ]);
+        }
+
+        if (Auth::attempt($credentials, $remember)) {
             $user = Auth::user();
 
             $request->session()->regenerate();
 
-            // Сессия уже создана, дополнительно логин не требуется
+            // Успешный вход
+            \Log::info('Auth login success', [
+                'user_id' => $user->id,
+                'email' => $user->email,
+                'ip' => $request->ip(),
+            ]);
+
             return response()->json([
                 'user' => UserResource::make($user)
             ], 200);
         } else {
+            // Неуспешный вход
+            \Log::warning('Auth login failed', [
+                'email' => $credentials['email'] ?? null,
+                'ip' => $request->ip(),
+            ]);
             return response()->json(['error' => 'Unauthorized'], 401);
         }
     }

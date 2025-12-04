@@ -44,7 +44,7 @@
                             <input
                                 type="text"
                                 v-model="bet"
-                                v-on:focusout="bet = +bet < 1 ? '1.00' : bet"
+                                v-on:focusout="validateBet"
                                 @change="typeBet('default')"
                                 :disabled="btnLoading"
                             />
@@ -228,23 +228,54 @@ export default {
     },  
     methods: {
         async play() {
+            // Блокируем повторные клики во время игры
+            if (this.btnLoading) {
+                return;
+            }
 
-            const userBalance = parseFloat(this.$store.state.user?.balance || 0);
+            // Устанавливаем btnLoading сразу, чтобы заблокировать повторные клики
+            this.btnLoading = true;
 
-            if (userBalance < parseFloat(this.bet)) {
+            const user = this.$store.state.user || {};
+            const userBalance = parseFloat(user.balance || 0);
+            const betAmount = parseFloat(this.bet);
+
+            // Проверка на минимальную ставку
+            if (betAmount < 1) {
+                this.btnLoading = false; // Сбрасываем при ошибке
                 this.noty = {
                     type: "error",
-                    mess: "Недостаточно средств",
+                    mess: "Минимальная ставка 1.00 ₽",
+                };
+                this.bet = "1.00";
+                return;
+            }
+
+            // Проверка на недостаточность баланса
+            if (betAmount > userBalance) {
+                this.btnLoading = false; // Сбрасываем при ошибке
+                this.noty = {
+                    type: "error",
+                    mess: "Недостаточно средств для ставки",
                 };
                 return;
             }
 
-            this.btnLoading = true;
+            // Проверка на максимальную ставку
+            if (betAmount > 1000000) {
+                this.btnLoading = false; // Сбрасываем при ошибке
+                this.noty = {
+                    type: "error",
+                    mess: "Максимальная ставка 1,000,000.00 ₽",
+                };
+                this.bet = "1000000.00";
+                return;
+            }
             this.game.end = false;
 
             try {
                 const response = await axios.post("/wheel/start", {
-                    bet: parseFloat(this.bet),
+                    bet: betAmount,
                     level: this.level,
                 });
 
@@ -268,7 +299,7 @@ export default {
                 // Обновление баланса пользователя в Vuex
                 this.$store.commit("setUser", {
                     ...this.$store.state.user,
-                    balance: userBalance - parseFloat(this.bet),
+                    balance: userBalance - betAmount,
                 });
 
                 const position = this.position[this.level][data.color];
@@ -327,31 +358,61 @@ export default {
             const wheel = document.querySelector(".legend-wheel-img");
             wheel.style.transform = `rotate(${this.winDegree}deg)`;
         },
-        typeBet(type) {
-            switch(type) {
-                case 'min':
-                    this.bet = '1.00'
-                break;
-                case 'max':
-                    this.bet = this.$root.user == null ? 0 : (this.$root.user.balance).toFixed(2)
-                break;
-                case '/2':
-                    this.bet = (this.bet / 2).toFixed(2)
-                break;
-                case 'x2':
-                    this.bet = (this.bet * 2).toFixed(2)
-                break;
-                case 'default':
-                    this.bet = (this.bet * 1).toFixed(2)
-                break;
+        validateBet() {
+            const betValue = parseFloat(this.bet);
+            const user = this.$store.state.user || {};
+            const userBalance = parseFloat(user.balance || 0);
+
+            if (isNaN(betValue) || betValue < 1) {
+                this.bet = "1.00";
+            } else if (betValue > 1000000) {
+                this.bet = "1000000.00";
+            } else if (betValue > userBalance && userBalance > 0) {
+                this.bet = userBalance.toFixed(2);
+            } else {
+                this.bet = betValue.toFixed(2);
             }
+        },
+        typeBet(type) {
+            const user = this.$store.state.user || {};
+            const userBalance = parseFloat(user.balance || 0);
+            let bet = parseFloat(this.bet);
+
+            // Если bet невалидное, устанавливаем 1.00
+            if (isNaN(bet) || bet < 1) {
+                bet = 1;
+            }
+
+            const betTypes = {
+                min: () => "1.00",
+                max: () => (userBalance > 0 ? userBalance.toFixed(2) : "1.00"),
+                "/2": () => Math.max(bet / 2, 1).toFixed(2),
+                x2: () => {
+                    const doubled = bet * 2;
+                    return userBalance > 0 ? Math.min(doubled, userBalance).toFixed(2) : doubled.toFixed(2);
+                },
+                default: () => bet.toFixed(2),
+            };
+
+            const newBet = (betTypes[type] || betTypes.default)();
+            this.bet = newBet;
         },
     },
     watch: {
-        bet: function () {
-            this.bet < 0 ? (this.bet = "1.00") : this.bet;
-            this.bet > 1000000 ? (this.bet = "1000000.00") : this.bet;
-            return (this.bet = bet);
+        bet: function (newVal) {
+            const betValue = parseFloat(newVal);
+            // Только проверка границ, без форматирования (чтобы избежать бесконечных циклов)
+            if (isNaN(betValue) || betValue < 1) {
+                if (this.bet !== "1.00") {
+                    this.bet = "1.00";
+                }
+            } else if (betValue > 1000000) {
+                if (this.bet !== "1000000.00") {
+                    this.bet = "1000000.00";
+                }
+            }
+            // Проверка баланса убрана из watcher, чтобы избежать циклов
+            // Она выполняется в validateBet (при потере фокуса) и в play (перед игрой)
         },
     },
     computed: {

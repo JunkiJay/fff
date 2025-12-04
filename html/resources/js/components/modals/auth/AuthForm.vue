@@ -18,6 +18,7 @@
         <input
             :type="showPassword ? 'text' : 'password'"
             id="password"
+            ref="password"
             class="registration-modal__input"
             placeholder="Пароль"
             v-model="form.password"
@@ -92,7 +93,7 @@ export default {
         email: '',
         password: '',
         confirmPassword: '',
-        remember: false,
+        remember: true,
       },
       showPassword: false,
       showConfirmPassword: false,
@@ -120,7 +121,14 @@ export default {
                   this.$emit('close');
               }, 1000);
           } catch (error) {
-              this.processErrorMessages(error.response?.data);
+              // Обрабатываем ошибки от axios (error.response?.data) или обычные Error
+              if (error.response?.data) {
+                  this.processErrorMessages(error.response.data);
+              } else if (error.message) {
+                  this.errorMessages = [error.message];
+              } else {
+                  this.processErrorMessages(null);
+              }
           } finally {
               this.isLoading = false;
           }
@@ -139,9 +147,21 @@ export default {
           this.successMessage = 'Регистрация прошла успешно!';
       },
       async login() {
+          // Берём пароль напрямую из инпута, чтобы исключить лаги v-model
+          const passwordInput = this.$refs.password;
+          const password = passwordInput ? passwordInput.value : this.form.password;
+
+          if (!password || password.length < 6) {
+              this.errorMessages.push('Пароль должен содержать минимум 6 символов.');
+              throw new Error('short_password');
+          }
+
+          // Синхронизируем с формой
+          this.form.password = password;
+
           const data = {
               email: this.form.email,
-              password: this.form.password,
+              password: password,
               remember: this.form.remember,
           };
           await this.$store.dispatch('login', data);
@@ -150,9 +170,24 @@ export default {
 
     processErrorMessages(errorData) {
       if (errorData) {
-        this.errorMessages = Object.values(errorData)
-            .flat()
-            .map(message => this.safeDecodeUnicode(message));
+        // Обрабатываем структуру {error: 'Unauthorized'} или {error: '...'}
+        if (errorData.error) {
+          const errorMessage = errorData.error === 'Unauthorized' 
+            ? 'Неверный email или пароль' 
+            : errorData.error;
+          this.errorMessages.push(this.safeDecodeUnicode(errorMessage));
+        } else if (typeof errorData === 'string') {
+          // Если ошибка - просто строка
+          this.errorMessages.push(this.safeDecodeUnicode(errorData));
+        } else if (Array.isArray(errorData)) {
+          // Если ошибка - массив
+          this.errorMessages = errorData.map(msg => this.safeDecodeUnicode(msg));
+        } else {
+          // Стандартная обработка объекта с ошибками
+          this.errorMessages = Object.values(errorData)
+              .flat()
+              .map(message => this.safeDecodeUnicode(message));
+        }
       } else {
         this.errorMessages.push('Произошла ошибка. Повторите попытку.');
       }

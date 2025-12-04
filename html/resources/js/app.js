@@ -9,7 +9,6 @@ import ModalPlugin from "@/plugins/modal";
 import mitt from "mitt";
 import { BModal } from "bootstrap-vue-next";
 import Notifications from "@kyvg/vue3-notification";
-import VueFullscreen from "vue-fullscreen";
 import VueClipboard from 'vue3-clipboard'
 
 
@@ -33,7 +32,6 @@ import VueClipboard from 'vue3-clipboard'
         app.use(store);
         app.use(router);
         app.use(Notifications);
-        app.use(VueFullscreen);
         app.use(ModalPlugin);
         app.use(VueClipboard, {
             autoSetContainer: true,
@@ -48,9 +46,7 @@ import VueClipboard from 'vue3-clipboard'
         // Mount app
         const vm = app.mount("#root");
         
-        // Authenticate socket if user exists
-        if (store.state.user) {
-            socket.emit('authenticate', store.state.user.id);
-        }
+        // Делаем emitter доступным глобально для показа уведомлений
+        window.$emitter = emitter;
     }
 })();

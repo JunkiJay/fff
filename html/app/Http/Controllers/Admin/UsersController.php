@@ -203,9 +203,12 @@ class UsersController extends Controller
             return redirect()->back()->with('error', 'Пользователь не найден!');
         }
 
-        if ($user->password !== $r->get('password')) {
+        // Обновляем пароль только если он передан и не пустой
+        $newPassword = $r->get('password');
+        if (!empty($newPassword) && $newPassword !== '') {
+            // Используем bcrypt для совместимости с Auth::attempt()
             $user->update([
-                'password' => hash('sha256', $r->get('password'))
+                'password' => \Illuminate\Support\Facades\Hash::make($newPassword)
             ]);
         }
 

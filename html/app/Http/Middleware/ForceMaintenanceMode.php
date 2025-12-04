@@ -134,15 +134,15 @@ class ForceMaintenanceMode
             return $next($request);
         }
         
-        // Точные пути
+        // Точные пути (указывать БЕЗ ведущего слэша, т.к. Request::is() работает с path вида "auth/login")
         $exactExceptions = [
-            '/maintenance/verify',
-            '/auth/login',
-            '/auth/register',
-            '/auth/vkontakte',
-            '/auth/vkontakte/handle',
-            '/user/init',
-            '/socket.io',
+            'maintenance/verify',
+            'auth/login',
+            'auth/register',
+            'auth/vkontakte',
+            'auth/vkontakte/handle',
+            'user/init',
+            'socket.io',
         ];
         
         foreach ($exactExceptions as $exception) {

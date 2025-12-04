@@ -1,17 +1,19 @@
 <template>
-    <div v-if="visible" class="popup-overlay">
-        <div class="popup-content">
-            <button class="popup-close" @click="close">✕</button>
-            <div class="popup-title">
-                 <img :src="signImg"><span class="font-['Oswald']">Успешное пополнение!</span>
+    <Teleport to="body">
+        <div v-if="visible" class="popup-overlay" @click="close">
+            <div class="popup-content" @click.stop>
+                <button class="popup-close" @click="close">✕</button>
+                <div class="popup-title">
+                     <img :src="signImg"><span class="font-['Oswald']">Успешное пополнение!</span>
+                </div>
+                <p class="popup-text font-['Rubick Medium']">
+                    Ваш депозит на {{ amount }}₽ успешно зачислен на счёт.<br>
+                    Приятной игры!
+                </p>
+                <button class="popup-button font-['Rubick Medium']" @click="goToGames">Перейти к играм</button>
             </div>
-            <p class="popup-text font-['Rubick Medium']">
-                Ваш депозит на {{ amount }}₽ успешно зачислен на счёт.<br>
-                Приятной игры!
-            </p>
-            <button class="popup-button font-['Rubick Medium']" @click="goToGames">Перейти к играм</button>
         </div>
-    </div>
+    </Teleport>
 </template>
 
 <script setup>
@@ -41,13 +43,14 @@ function goToGames() {
 
 <style scoped>
 .popup-overlay {
-    position: fixed;
+    position: fixed !important;
     inset: 0;
     background-color: rgba(10, 4, 16, 0.7);
-    z-index: 999;
+    z-index: 2147483647 !important; /* Максимальное значение z-index */
     display: flex;
     justify-content: center;
     align-items: center;
+    pointer-events: auto;
 }
 
 .popup-content {
@@ -61,6 +64,8 @@ function goToGames() {
     position: relative;
     text-align: center;
     font-family: sans-serif;
+    z-index: 2147483647 !important; /* Максимальное значение z-index */
+    pointer-events: auto;
 }
 
 .popup-close {

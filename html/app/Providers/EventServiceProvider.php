@@ -22,6 +22,9 @@ class EventServiceProvider extends ServiceProvider
         // ... other providers
         'SocialiteProviders\\VKontakte\\VKontakteExtendSocialite@handle',
         ],
+        \App\Events\DepositCinfirmationEvent::class => [
+            \App\Listeners\SendDepositConfirmationNotification::class,
+        ],
     ];
 
     /**

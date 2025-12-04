@@ -2635,10 +2635,6 @@ class PaymentController extends Controller
             return 'payment already paid';
         }
 
-        $incrementSum = $payment->bonus != 0
-            ? $payment->sum + (($payment->sum * $payment->bonus) / 100)
-            : $payment->sum;
-
         $user = User::find($payment->user_id);
 
         if ($user->balance < 10) {
@@ -2646,8 +2642,21 @@ class PaymentController extends Controller
             $user->save();
         }
 
-        $user->increment('balance', ($incrementSum + $incrementSum * 0.05));
-        $user->increment('wager', $incrementSum * $payment->wager);
+        // ИСПРАВЛЕНО: убрано двойное начисление бонуса
+        // Раньше было: ($incrementSum + $incrementSum * 0.05) - это добавляло еще 5% поверх бонуса
+        // Теперь используем обычную логику расчета бонуса
+        $incrementSum = $payment->bonus != 0
+            ? $payment->sum + (($payment->sum * $payment->bonus) / 100)
+            : $payment->sum;
+
+        \Log::info('FK Wallet old callback: bonus calculation', [
+            'payment_id' => $payment->id,
+            'payment_bonus' => $payment->bonus,
+            'incrementSum' => $incrementSum,
+        ]);
+
+        $user->increment('balance', $incrementSum);
+        $user->increment('wager', $payment->sum * ($payment->wager ?? 3));
 
         if (!is_null($user->referral_use)) {
             $this->setReferralProfit($user->id, $payment->sum);
@@ -2656,10 +2665,13 @@ class PaymentController extends Controller
         $payment->status = 1;
         $payment->save();
 
+        // Обновляем пользователя, чтобы получить актуальный баланс
+        $user->refresh();
+        
         Action::create([
             'user_id' => $user->id,
             'action' => 'Пополнение через Free-kassa',
-            'balanceBefore' => $user->balance - $payment->sum,
+            'balanceBefore' => $user->balance - $incrementSum,
             'balanceAfter' => round($user->balance, 2)
         ]);
 
@@ -2680,13 +2692,19 @@ class PaymentController extends Controller
             return redirect('/')->with('error', 'Платеж не найден');
         }
 
-        // Обновляем сессию пользователя, если он авторизован
-        if (auth()->check() && auth()->id() == $payment->user_id) {
-            // Обновляем данные пользователя в сессии
+        // Обновляем / восстанавливаем сессию пользователя
+        // Если сессия потерялась после перехода на FK — логиним по user_id из платежа
+        if (!auth()->check() || auth()->id() != $payment->user_id) {
+            $user = \App\Models\User::find($payment->user_id);
+            if ($user) {
+                \Illuminate\Support\Facades\Auth::login($user, true); // логин с remember-me
+            }
+        }
+
+        // На этом этапе auth()->user() должен быть актуален
+        if (auth()->check()) {
             $user = auth()->user();
             $user->refresh();
-            
-            // Обновляем сессию
             session()->put('user', $user);
         }
 
@@ -4512,7 +4530,11 @@ class PaymentController extends Controller
             'payment_id' => $payment->id,
             'invoice_id' => $invoiceId,
             'merchant_meta' => $payment->merchant_meta,
-            'current_status' => $payment->status
+            'current_status' => $payment->status,
+            'payment_sum' => $payment->sum,
+            'payment_bonus' => $payment->bonus, // Проверяем bonus из базы
+            'payment_system' => $payment->system,
+            'payment_method' => $payment->method?->value
         ]);
 
         $user = User::where('id', $payment->user_id)->first();
@@ -4561,9 +4583,25 @@ class PaymentController extends Controller
                 $this->setReferralProfit($user->id, $payment->sum);
             }
 
+            // Логируем данные для диагностики
+            \Log::info('Cryptobot callback: bonus calculation', [
+                'payment_id' => $payment->id,
+                'payment_sum' => $payment->sum,
+                'payment_bonus' => $payment->bonus,
+                'user_balance_before' => $user->balance
+            ]);
+
             $incrementSum = $payment->bonus != 0
                 ? $payment->sum + (($payment->sum * $payment->bonus) / 100)
                 : $payment->sum;
+
+            \Log::info('Cryptobot callback: increment calculation', [
+                'payment_id' => $payment->id,
+                'incrementSum' => $incrementSum,
+                'calculation' => $payment->bonus != 0 
+                    ? "{$payment->sum} + ({$payment->sum} * {$payment->bonus} / 100) = {$incrementSum}"
+                    : "{$payment->sum} (no bonus)"
+            ]);
 
             $balanceBefore = $user->balance;
             

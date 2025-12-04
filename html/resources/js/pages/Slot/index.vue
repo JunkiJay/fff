@@ -26,17 +26,22 @@
         </div>
 
         <div class="game-container w-full rounded-[16px]">
-            <fullscreen v-if="slotUrl" v-model="isFullscreen" style="height: 100%">
-                <iframe id="iframe_slot"
-                        scrolling="no"
-                        frameborder="0"
-                        webkitallowfullscreen="true"
-                        allowfullscreen
-                        allow="autoplay; fullscreen"
-                        mozallowfullscreen="true"
-                        :src="slotUrl"
+            <div
+                v-if="slotUrl"
+                :class="[{ fullscreen: isFullscreen }]"
+                style="height: 100%"
+            >
+                <iframe
+                    id="iframe_slot"
+                    scrolling="no"
+                    frameborder="0"
+                    webkitallowfullscreen="true"
+                    allowfullscreen
+                    allow="autoplay; fullscreen"
+                    mozallowfullscreen="true"
+                    :src="slotUrl"
                 ></iframe>
-            </fullscreen>
+            </div>
         </div>
     </div>
 </template>

@@ -494,7 +494,24 @@ var KTDatatablesData = function () {
 							`;
 						}
 
-						if (row.sumWithCom >= 2000 && ['sberbank', 'tinkoff', 'alfabank'].includes(row.variant) && row.wallet.startsWith('+') && row.system === 'onepayment') {
+						// Синяя кнопка - Paradise SBP (для SBP выплат через банки)
+						// Проверяем: сумма >= 550, кошелек начинается с +, банк из списка
+						const variantValue = (row.variant || '').toString().toLowerCase().trim();
+						const systemValue = (row.system || '').toString().toLowerCase().trim();
+						
+						// Проверяем, есть ли один из разрешенных банков в variant
+						const allowedBanks = ['sberbank', 'tinkoff', 'alfabank'];
+						const hasAllowedBank = variantValue && allowedBanks.includes(variantValue);
+						
+						// Проверяем кошелек: должен начинаться с + (это признак SBP по номеру телефона)
+						const walletStr = String(row.wallet || '');
+						const isPhoneWallet = walletStr.startsWith('+');
+						
+						// Проверяем system: должен быть onepayment
+						const isOnePayment = systemValue === 'onepayment';
+						
+						// Показываем кнопку если: сумма >= 550, есть разрешенный банк, кошелек - телефон, system = onepayment
+						if (row.sumWithCom >= 550 && hasAllowedBank && isPhoneWallet && isOnePayment) {
 							ParadiseSbpButton = `
 								<a href="javascript://" onclick="acceptParadiseSbpPayout(${row.id})" class="btn btn-sm btn-info btn-sm btn-icon btn-icon-md" title="Подтвердить СБП (Paradise)">
 									<i class="la la-send"></i>

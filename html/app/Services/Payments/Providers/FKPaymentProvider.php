@@ -29,7 +29,11 @@ class FKPaymentProvider extends PaymentProvider
 
     public function pay(Payment $payment): PaymentRedirectResult
     {
-        $amount = $this->reduceAmountByBonusPercents($payment);
+        // ВАЖНО:
+        //  - $payment->sum здесь — это сумма, которую ввёл пользователь (например, 10₽)
+        //  - бонус (% из метода или промокода) начисляется только в callback на баланс,
+        //    поэтому провайдеру отправляем ИМЕННО эту сумму, без вычитания бонуса
+        $amount = $payment->sum;
         $terminalId = config('api-clients.fk.terminal_id');
         $terminalSecret1 = config('api-clients.fk.terminal_secret_1');
         $sign = md5($terminalId . ':' . $amount . ':' . $terminalSecret1 . ':RUB:' . $payment->id);
@@ -124,16 +128,31 @@ class FKPaymentProvider extends PaymentProvider
             return new PaymentSuccessResult();
         }
 
+        // ВАЖНО: Логируем что пришло от FK Wallet
+        Log::info('FK Wallet callback: received data', [
+            'payment_id' => $payment->id,
+            'original_payment_sum' => $payment->sum,
+            'amount_from_provider' => $amount,
+            'amount_difference' => (float)$amount - (float)$payment->sum,
+            'payment_bonus' => $payment->bonus,
+        ]);
+
         // Проверяем сумму
         if ((float)$amount != (float)$payment->sum) {
-            Log::warning('FK Wallet callback amount mismatch', [
+            // ВАЖНО:
+            //  - $payment->sum — это сумма, которую ввёл пользователь (например, 10₽)
+            //  - FK Wallet может вернуть сумму с уже добавленным своим бонусом/кэшбеком (например, 10.5₽)
+            //  - Если мы перезаписываем payment->sum на 10.5 и ещё раз добавляем наш бонус 5%,
+            //    получится двойное начисление (примерно 11.03₽ вместо ожидаемых 10.5₽).
+            //
+            // Поэтому:
+            //  - НЕ перезаписываем payment->sum, а только логируем расхождение.
+            Log::warning('FK Wallet callback amount mismatch (keeping original sum to avoid double bonus)', [
                 'payment_id' => $payment->id,
-                'expected' => $payment->sum,
-                'received' => $amount
+                'expected_original_sum' => $payment->sum,
+                'received_from_provider' => $amount,
+                'difference' => (float)$amount - (float)$payment->sum,
             ]);
-            // Обновляем сумму, если она отличается
-            $payment->sum = (float)$amount;
-            $payment->save();
         }
 
         // Обрабатываем платеж
@@ -144,9 +163,28 @@ class FKPaymentProvider extends PaymentProvider
             return new PaymentErrorResult('User not found');
         }
 
+        // Логируем данные для диагностики бонусов
+        Log::info('FK Wallet callback: bonus calculation', [
+            'payment_id' => $payment->id,
+            'payment_sum' => $payment->sum,
+            'payment_bonus' => $payment->bonus,
+            'user_balance_before' => $user->balance,
+            'expected_bonus_percent' => 5 // Из конфига
+        ]);
+
+        // Рассчитываем сумму с учетом бонуса
         $incrementSum = $payment->bonus != 0
             ? $payment->sum + (($payment->sum * $payment->bonus) / 100)
             : $payment->sum;
+
+        Log::info('FK Wallet callback: increment calculation', [
+            'payment_id' => $payment->id,
+            'payment_bonus' => $payment->bonus,
+            'incrementSum' => $incrementSum,
+            'calculation' => $payment->bonus != 0 
+                ? "{$payment->sum} + ({$payment->sum} * {$payment->bonus} / 100) = {$incrementSum}"
+                : "{$payment->sum} (no bonus)"
+        ]);
 
         // Обновляем баланс пользователя
         $user->increment('wager', $payment->sum * 3);
@@ -156,10 +194,27 @@ class FKPaymentProvider extends PaymentProvider
         $payment->status = 1;
         $payment->save();
 
+        // Создаем запись в Action
+        \App\Models\Action::create([
+            'user_id' => $user->id,
+            'action' => 'Пополнение через FK Wallet',
+            'balanceBefore' => $user->balance - $incrementSum,
+            'balanceAfter' => round($user->balance, 2)
+        ]);
+
+        // Отправляем уведомление о пополнении
+        \App\Services\Notifications\Facades\NotificationsServiceFacade::sendDepositConfirmation($payment);
+
+        // Обновляем пользователя, чтобы получить актуальный баланс
+        $user->refresh();
+
         Log::info('FK Wallet payment processed successfully', [
             'payment_id' => $payment->id,
             'user_id' => $user->id,
-            'amount' => $incrementSum
+            'incrementSum' => $incrementSum,
+            'balance_before' => $user->balance - $incrementSum,
+            'balance_after' => $user->balance,
+            'actual_increment' => $user->balance - ($user->balance - $incrementSum), // Фактическое увеличение баланса
         ]);
 
         return new PaymentSuccessResult();

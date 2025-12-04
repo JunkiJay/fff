@@ -57,7 +57,7 @@ class BonusController extends Controller
         if (!$this->isChannelMember()) {
             return [
                 'error' => true,
-                'message' => 'Подпишитесь на все группы Telegram'
+                'message' => 'Подпишитесь на Telegram канал'
             ];
         }
 

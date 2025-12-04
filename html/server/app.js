@@ -51,14 +51,68 @@ RedisClient.on("message", async (channel, message) => {
 
     if (channel === "depositConfirmation") {
         let data = JSON.parse(message);
-
-        io.sockets.to(`user_${data.data.user_id}`).emit("depositConfirmation", data);
+        
+        console.log('depositConfirmation raw data:', JSON.stringify(data, null, 2));
+        
+        // Laravel Broadcasting может отправлять в разных форматах:
+        // 1. {event: "deposit-confirmation", data: {payment_id, user_id, amount}}
+        // 2. {payment_id, user_id, amount} (прямо)
+        // 3. {data: {payment_id, user_id, amount}}
+        
+        let userId = null;
+        let paymentId = null;
+        let amount = null;
+        
+        // Пробуем разные варианты извлечения данных
+        if (data.data && data.data.user_id) {
+            // Формат: {event: "...", data: {...}}
+            userId = data.data.user_id;
+            paymentId = data.data.payment_id;
+            amount = data.data.amount;
+        } else if (data.user_id) {
+            // Формат: {user_id, payment_id, amount}
+            userId = data.user_id;
+            paymentId = data.payment_id;
+            amount = data.amount;
+        }
+        
+        if (userId) {
+            console.log(`Sending depositConfirmation to user_${userId}`, {
+                payment_id: paymentId,
+                user_id: userId,
+                amount: amount
+            });
+            
+            io.sockets.to(`user_${userId}`).emit("depositConfirmation", {
+                data: {
+                    payment_id: paymentId,
+                    user_id: userId,
+                    amount: amount
+                }
+            });
+        } else {
+            console.error('depositConfirmation: user_id not found in data:', JSON.stringify(data, null, 2));
+        }
     }
 
     if (channel === "withdrawConfirmation") {
         let data = JSON.parse(message);
-
-        io.sockets.to(`user_${data.data.user_id}`).emit("withdrawConfirmation", data);
+        
+        // Laravel Broadcasting публикует в формате: {event: "...", data: {...}}
+        const userId = data.data?.user_id || data.user_id;
+        
+        if (userId) {
+            console.log(`Sending withdrawConfirmation to user_${userId}`, data);
+            io.sockets.to(`user_${userId}`).emit("withdrawConfirmation", {
+                data: {
+                    withdraw_id: data.data?.withdraw_id || data.withdraw_id,
+                    user_id: userId,
+                    amount: data.data?.amount || data.amount
+                }
+            });
+        } else {
+            console.error('withdrawConfirmation: user_id not found', data);
+        }
     }
 });
 

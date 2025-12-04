@@ -170,7 +170,7 @@ return [
             'provider' => PaymentProvidersEnum::ONEPAY,
             'withdraw' => [
                 [
-                    'min' => 3200,
+                    'min' => 550,
                     'max' => 300000,
                     'method' => PaymentMethodEnum::SBP,
                     'commission_percents' => 5,

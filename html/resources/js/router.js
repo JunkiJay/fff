@@ -156,5 +156,23 @@ const router = createRouter({
     },
 });
 
+// Глобальная защита от битых ссылок слотов
+router.beforeEach((to, from, next) => {
+    if (to.name === "slot") {
+        const rawId = to.params.id;
+        const numericId = parseInt(rawId, 10);
+
+        // Разрешаем только числовые ID, иначе возвращаем в лобби слотов
+        if (!rawId || Number.isNaN(numericId) || numericId <= 0) {
+            console.error("Blocked invalid slot route ID:", rawId);
+            return next({ name: "slots" });
+        }
+
+        // Нормализуем ID (на случай, если был строкой)
+        to.params.id = String(numericId);
+    }
+
+    next();
+});
 
 export default router;

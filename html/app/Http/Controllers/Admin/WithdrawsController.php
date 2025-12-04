@@ -178,15 +178,30 @@ class WithdrawsController extends Controller
             }
 
 
-            if ($withdraw->sumWithCom < 2000) {
-                return $this->errorResponse('Минимальная сумма вывода 2000 ₽');
+            if ($withdraw->sumWithCom < 550) {
+                return $this->errorResponse('Минимальная сумма вывода 550 ₽');
             }
 
 
             $system = $withdraw->system;
-
-            if (!in_array($system, ['tinkoff', 'sberbank', 'alfabank'])) {
-                return $this->errorResponse('Этот метод вывода предназначень только для Т-банк, Сбербанк, Алфабанк');
+            $method = $withdraw->method;
+            $variant = $withdraw->variant ?? null;
+            
+            // Определяем банк для SBP выплат
+            // Для SBP через Paradise банк может быть в variant или system
+            $bank = null;
+            
+            // Сначала проверяем variant (для SBP выплат банк обычно там)
+            if ($variant && in_array($variant, ['tinkoff', 'sberbank', 'alfabank'])) {
+                $bank = $variant;
+            }
+            // Если variant не содержит банк, проверяем system
+            elseif (in_array($system, ['tinkoff', 'sberbank', 'alfabank'])) {
+                $bank = $system;
+            }
+            // Если ни variant, ни system не содержат банк, возвращаем ошибку
+            else {
+                return $this->errorResponse('Этот метод вывода предназначен только для Т-банк, Сбербанк, Алфабанк. Убедитесь, что выбран правильный банк при создании выплаты.');
             }
 
             $wallet = $this->antiFormatWallet($withdraw->wallet);
@@ -194,14 +209,12 @@ class WithdrawsController extends Controller
             $postData = [];
             $sbp_bank = '';
 
-            if (in_array($system, ['tinkoff', 'sberbank', 'alfabank'])) {
-                if ($system == 'tinkoff') {
-                    $sbp_bank = "Т-Банк";
-                } elseif ($system == 'sberbank') {
-                    $sbp_bank = "Сбербанк";
-                } elseif ($system == 'alfabank') {
-                    $sbp_bank = "АЛЬФА-БАНК";
-                }
+            if ($bank == 'tinkoff') {
+                $sbp_bank = "Т-Банк";
+            } elseif ($bank == 'sberbank') {
+                $sbp_bank = "Сбербанк";
+            } elseif ($bank == 'alfabank') {
+                $sbp_bank = "АЛЬФА-БАНК";
             } else {
                 return $this->errorResponse('Неизвестная платёжная система');
             }
@@ -223,14 +236,18 @@ class WithdrawsController extends Controller
 
             Log::info('Withdraw response ', [$response]);
 
+            // Проверяем наличие ошибки в ответе
+            if (isset($response['error']) && $response['error'] === true) {
+                return $this->errorResponse($response['message'] ?? 'Ошибка при обработке выплаты');
+            }
+
             if (isset($response['status']) && $response['status'] == 'waiting') {
                 $withdraw->update(['status' => 3]);
             } else {
-                return [
-                    'error' => true,
-                    'message' => $response,
-                    'reload' => true
-                ];
+                $errorMessage = is_array($response) 
+                    ? ($response['message'] ?? 'Неизвестная ошибка при обработке выплаты')
+                    : 'Ошибка при обработке выплаты';
+                return $this->errorResponse($errorMessage);
             }
 
             DB::commit();
@@ -249,33 +266,70 @@ class WithdrawsController extends Controller
 
     private function sendParadiseSbpPayoutRequest(array $postData)
     {
-
-        $jsonData = json_encode($postData);
-
         $shop_id = 8;
-        $secret = 'prod_FdxJk1vWwn6whLOc4sQ3GF0g';
+        $secret = 'prod_p5psWNO5OzxzdT4YInK7xpvy';
 
-        $url = 'https://api.p2p-paradise.info/payouts';
+        $url = 'https://p2paradise.net/api/payouts';
 
-        $response = Http::withHeaders([
-            "merchant-id" => $shop_id,
-            "merchant-secret-key" => $secret,
-            "Content-Type" => "application/json",
-        ])->post($url, $postData);
-
-        $result = $response->json();
-
-        Log::info('Logs ответ от Paradise After', [
-            'body' => $postData,
-            'headers' => [
+        try {
+            $response = Http::withHeaders([
                 "merchant-id" => $shop_id,
                 "merchant-secret-key" => $secret,
-            ],
-            'url' => $url,
-            'response' => $result,
-        ]);
+                "Content-Type" => "application/json",
+            ])->post($url, $postData);
 
-        return $result;
+            $statusCode = $response->status();
+            $result = $response->json();
+
+            Log::info('Paradise SBP Payout Request', [
+                'body' => $postData,
+                'headers' => [
+                    "merchant-id" => $shop_id,
+                    "merchant-secret-key" => $secret,
+                ],
+                'url' => $url,
+                'status_code' => $statusCode,
+                'response' => $result,
+                'raw_response' => $response->body(),
+            ]);
+
+            // Если ответ не JSON или есть ошибка
+            if ($result === null) {
+                $errorMessage = $response->body();
+                Log::error('Paradise SBP Payout: Invalid JSON response', [
+                    'status_code' => $statusCode,
+                    'body' => $errorMessage,
+                ]);
+                return [
+                    'error' => true,
+                    'message' => 'Ошибка при обработке ответа от платежной системы'
+                ];
+            }
+
+            // Если HTTP статус не успешный
+            if ($statusCode >= 400) {
+                $errorMessage = $result['errors'][0]['message'] ?? 'Ошибка при обработке запроса';
+                Log::error('Paradise SBP Payout: HTTP Error', [
+                    'status_code' => $statusCode,
+                    'error' => $errorMessage,
+                ]);
+                return [
+                    'error' => true,
+                    'message' => $errorMessage
+                ];
+            }
+
+            return $result;
+        } catch (\Exception $e) {
+            Log::error('Paradise SBP Payout: Exception', [
+                'error' => $e->getMessage(),
+                'trace' => $e->getTraceAsString(),
+            ]);
+            return [
+                'error' => true,
+                'message' => 'Ошибка при отправке запроса: ' . $e->getMessage()
+            ];
+        }
     }
 
 
@@ -364,7 +418,10 @@ class WithdrawsController extends Controller
 
     private function antiFormatWallet($wallet)
     {
-        return trim($wallet, [' ', '+']);
+        if (empty($wallet)) {
+            return '';
+        }
+        return trim($wallet, ' +');
     }
 
     private function errorResponse($message)

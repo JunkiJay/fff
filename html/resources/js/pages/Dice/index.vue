@@ -14,18 +14,14 @@
                             </button>
                             <Button variant="default" :isDisabled="false" class="form__button" @click.native="typeBet('min')">MIN</Button>
                             <Button variant="default" :isDisabled="false" class="form__button" @click.native="typeBet('max')">MAX</Button>
-                            <Button :isDisabled="!$store.state.user || parseFloat(bet) * 2 > $store.state.user.balance"
-                                variant="default" class="form__button" @click.native="typeBet('x2')">X2</Button>
-                            <Button :isDisabled="!$store.state.user || parseFloat(bet) / 2 < 1" variant="default"
-                                class="form__button" @click.native="typeBet('/2')">/2</Button>
+                            <Button variant="default" :isDisabled="false" class="form__button" @click.native="typeBet('x2')">X2</Button>
+                            <Button variant="default" :isDisabled="false" class="form__button" @click.native="typeBet('/2')">/2</Button>
                         </div>
                         <div class="form__buttons bet">
                             <Button variant="default" :isDisabled="false" class="form__button" @click.native="typeBet('min')">MIN</Button>
                             <Button variant="default" :isDisabled="false" class="form__button" @click.native="typeBet('max')">MAX</Button>
-                            <Button :isDisabled="!$store.state.user || parseFloat(bet) * 2 > $store.state.user.balance"
-                                variant="default" class="form__button" @click.native="typeBet('x2')">X2</Button>
-                            <Button :isDisabled="!$store.state.user || parseFloat(bet) / 2 < 1" variant="default"
-                                class="form__button" @click.native="typeBet('/2')">/2</Button>
+                            <Button variant="default" :isDisabled="false" class="form__button" @click.native="typeBet('x2')">X2</Button>
+                            <Button variant="default" :isDisabled="false" class="form__button" @click.native="typeBet('/2')">/2</Button>
                         </div>
                     </div>
                 </div>

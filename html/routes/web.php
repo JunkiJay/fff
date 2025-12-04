@@ -324,4 +324,9 @@ Route::post('/maintenance/verify', function (\Illuminate\Http\Request $request) 
     return redirect('/?error=1');
 })->name('maintenance.verify');
 
+// Отдельная страница выхода из игры (чтобы избежать рекурсии сайта внутри iframe)
+Route::get('/game-exit', function () {
+    return view('game-exit');
+});
+
 Route::any('/{any}', 'IndexController@index')->where('any', '.*')->name('index');
