@@ -1,0 +1,3503 @@
+
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+355 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+356 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+357 │               padding: 16px;
+    │               ^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 357:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+358 │               border-radius: 9px;
+    │               ^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 358:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+● Mix █████████████████████████ building (10%) 0/1 entries 239/283 dependencie
+s 4/206 modules 123 active
+ ...-loader › vue-loader › resources/js/pages/Bubbles/index.vue
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+5 │ @import "./variables.scss";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    stdin 5:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+6 │ @import "./reset.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 6:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+7 │ @import "./utils.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 7:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+8 │ @import "./loader.scss";
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    stdin 8:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+9 │ @import "./modal.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 9:9  root stylesheet
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+355 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+356 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+357 │               padding: 16px;
+    │               ^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 357:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+358 │               border-radius: 9px;
+    │               ^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 358:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+● Mix █████████████████████████ building (10%) 0/1 entries 493/550 dependencie
+s 27/280 modules 140 active
+ ...odules/bootstrap-vue-next/dist/BFormGroup.vue_vue_type_script_lang-CfL_PZZ
+X.mjs
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+5 │ @import "./variables.scss";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    stdin 5:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+6 │ @import "./reset.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 6:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+7 │ @import "./utils.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 7:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+8 │ @import "./loader.scss";
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    stdin 8:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+9 │ @import "./modal.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 9:9  root stylesheet
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+355 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+356 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+357 │               padding: 16px;
+    │               ^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 357:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+358 │               border-radius: 9px;
+    │               ^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 358:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+● Mix █████████████████████████ building (10%) 0/1 entries 545/580 dependencie
+s 33/303 modules 193 active
+ ...ue-loader › vue-loader › resources/js/components/Header.vue
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+5 │ @import "./variables.scss";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    stdin 5:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+6 │ @import "./reset.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 6:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+7 │ @import "./utils.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 7:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+8 │ @import "./loader.scss";
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    stdin 8:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+9 │ @import "./modal.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 9:9  root stylesheet
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+355 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+356 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+357 │               padding: 16px;
+    │               ^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 357:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+358 │               border-radius: 9px;
+    │               ^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 358:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+● Mix █████████████████████████ building (10%) 0/1 entries 730/778 dependencie
+s 33/316 modules 214 active
+ ...k-main/node_modules/bootstrap-vue-next/dist/src/directives/BColorMode/inde
+x.mjs
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+5 │ @import "./variables.scss";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    stdin 5:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+6 │ @import "./reset.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 6:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+7 │ @import "./utils.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 7:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+8 │ @import "./loader.scss";
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    stdin 8:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+9 │ @import "./modal.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 9:9  root stylesheet
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+355 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+356 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+357 │               padding: 16px;
+    │               ^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 357:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+358 │               border-radius: 9px;
+    │               ^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 358:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+● Mix █████████████████████████ building (10%) 0/1 entries 1107/1180 dependenc
+ies 41/499 modules 222 active
+ ...fks/Projects/stimule-rework-main/node_modules/socket.io-client/build/esm/u
+rl.js
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+5 │ @import "./variables.scss";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    stdin 5:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+6 │ @import "./reset.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 6:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+7 │ @import "./utils.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 7:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+8 │ @import "./loader.scss";
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    stdin 8:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+9 │ @import "./modal.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 9:9  root stylesheet
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+355 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+356 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+357 │               padding: 16px;
+    │               ^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 357:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+358 │               border-radius: 9px;
+    │               ^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 358:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+356 │               padding: 16px 0;
+    │               ^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Warning: 3 repetitive deprecation warnings omitted.
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+● Mix █████████████████████████ building (10%) 0/1 entries 1167/1198 dependenc
+ies 43/514 modules 283 active
+ ...cts/stimule-rework-main/node_modules/bootstrap-vue-next/dist/event-aFP-C_y
+t.mjs
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+5 │ @import "./variables.scss";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    stdin 5:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+6 │ @import "./reset.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 6:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+7 │ @import "./utils.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 7:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+8 │ @import "./loader.scss";
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    stdin 8:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+9 │ @import "./modal.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 9:9  root stylesheet
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+355 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+356 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+357 │               padding: 16px;
+    │               ^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 357:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+358 │               border-radius: 9px;
+    │               ^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 358:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+356 │               padding: 16px 0;
+    │               ^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Warning: 3 repetitive deprecation warnings omitted.
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+● Mix █████████████████████████ building (11%) 0/1 entries 1231/1264 dependenc
+ies 128/533 modules 212 active
+ ...fks/Projects/stimule-rework-main/node_modules/axios/lib/cancel/CanceledErr
+or.js
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+5 │ @import "./variables.scss";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    stdin 5:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+6 │ @import "./reset.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 6:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+7 │ @import "./utils.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 7:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+8 │ @import "./loader.scss";
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    stdin 8:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+9 │ @import "./modal.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 9:9  root stylesheet
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+355 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+356 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+357 │               padding: 16px;
+    │               ^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 357:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+358 │               border-radius: 9px;
+    │               ^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 358:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+356 │               padding: 16px 0;
+    │               ^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Warning: 3 repetitive deprecation warnings omitted.
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+● Mix █████████████████████████ building (12%) 0/1 entries 1332/1403 dependenc
+ies 185/557 modules 181 active
+ vue-loader › resources/js/components/ui/TrashSVG.vue
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+5 │ @import "./variables.scss";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    stdin 5:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+6 │ @import "./reset.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 6:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+7 │ @import "./utils.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 7:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+8 │ @import "./loader.scss";
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    stdin 8:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+9 │ @import "./modal.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 9:9  root stylesheet
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+355 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+356 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+357 │               padding: 16px;
+    │               ^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 357:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+358 │               border-radius: 9px;
+    │               ^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 358:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+356 │               padding: 16px 0;
+    │               ^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Warning: 3 repetitive deprecation warnings omitted.
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+● Mix █████████████████████████ building (12%) 0/1 entries 1472/1504 dependenc
+ies 227/607 modules 221 active
+ node_modules/moment/locale/ms.js
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+5 │ @import "./variables.scss";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    stdin 5:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+6 │ @import "./reset.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 6:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+7 │ @import "./utils.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 7:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+8 │ @import "./loader.scss";
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    stdin 8:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+9 │ @import "./modal.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 9:9  root stylesheet
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+355 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+356 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+357 │               padding: 16px;
+    │               ^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 357:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+358 │               border-radius: 9px;
+    │               ^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 358:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+356 │               padding: 16px 0;
+    │               ^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Warning: 3 repetitive deprecation warnings omitted.
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+● Mix █████████████████████████ building (13%) 0/1 entries 1604/1624 dependenc
+ies 275/641 modules 266 active
+ ...ers/fks/Projects/stimule-rework-main/node_modules/axios/lib/helpers/buildU
+RL.js
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+5 │ @import "./variables.scss";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    stdin 5:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+6 │ @import "./reset.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 6:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+7 │ @import "./utils.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 7:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+8 │ @import "./loader.scss";
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    stdin 8:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+9 │ @import "./modal.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 9:9  root stylesheet
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+355 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+356 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+357 │               padding: 16px;
+    │               ^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 357:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+358 │               border-radius: 9px;
+    │               ^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 358:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+356 │               padding: 16px 0;
+    │               ^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Warning: 3 repetitive deprecation warnings omitted.
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+● Mix █████████████████████████ building (13%) 0/1 entries 1646/1655 dependenc
+ies 291/649 modules 252 active
+ .../Projects/stimule-rework-main/node_modules/axios/lib/core/InterceptorManag
+er.js
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+5 │ @import "./variables.scss";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    stdin 5:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+6 │ @import "./reset.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 6:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+7 │ @import "./utils.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 7:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+8 │ @import "./loader.scss";
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    stdin 8:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+9 │ @import "./modal.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 9:9  root stylesheet
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+355 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+356 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+357 │               padding: 16px;
+    │               ^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 357:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+358 │               border-radius: 9px;
+    │               ^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 358:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+356 │               padding: 16px 0;
+    │               ^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Warning: 3 repetitive deprecation warnings omitted.
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+● Mix █████████████████████████ building (13%) 0/1 entries 1817/1854 dependenc
+ies 344/726 modules 270 active
+ vue-loader › resources/js/components/ui/TournamentSVG.vue
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+5 │ @import "./variables.scss";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    stdin 5:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+6 │ @import "./reset.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 6:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+7 │ @import "./utils.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 7:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+8 │ @import "./loader.scss";
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    stdin 8:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+9 │ @import "./modal.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 9:9  root stylesheet
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+355 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+356 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+357 │               padding: 16px;
+    │               ^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 357:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+358 │               border-radius: 9px;
+    │               ^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 358:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+356 │               padding: 16px 0;
+    │               ^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Warning: 3 repetitive deprecation warnings omitted.
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+● Mix █████████████████████████ building (13%) 0/1 entries 1866/1882 dependenc
+ies 352/759 modules 328 active
+ ...m› vue-loader › resources/js/components/modals/auth/AuthForm.vue
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+5 │ @import "./variables.scss";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    stdin 5:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+6 │ @import "./reset.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 6:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+7 │ @import "./utils.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 7:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+8 │ @import "./loader.scss";
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    stdin 8:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+9 │ @import "./modal.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 9:9  root stylesheet
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+355 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+356 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+357 │               padding: 16px;
+    │               ^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 357:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+358 │               border-radius: 9px;
+    │               ^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 358:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+356 │               padding: 16px 0;
+    │               ^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Warning: 3 repetitive deprecation warnings omitted.
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+● Mix █████████████████████████ building (13%) 0/1 entries 1921/1930 dependenc
+ies 353/810 modules 368 active
+ ...m|/Users/fks/Projects/stimule-rework-main/node_modules/axios/lib/core/sett
+le.js
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+5 │ @import "./variables.scss";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    stdin 5:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+6 │ @import "./reset.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 6:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+7 │ @import "./utils.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 7:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+8 │ @import "./loader.scss";
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    stdin 8:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+9 │ @import "./modal.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 9:9  root stylesheet
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+355 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+356 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+357 │               padding: 16px;
+    │               ^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 357:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+358 │               border-radius: 9px;
+    │               ^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 358:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+356 │               padding: 16px 0;
+    │               ^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Warning: 3 repetitive deprecation warnings omitted.
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+● Mix █████████████████████████ building (14%) 0/1 entries 1968/1988 dependenc
+ies 395/839 modules 375 active
+ ...loader › vue-loader › resources/js/components/ui/Button.vue
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+5 │ @import "./variables.scss";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    stdin 5:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+6 │ @import "./reset.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 6:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+7 │ @import "./utils.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 7:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+8 │ @import "./loader.scss";
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    stdin 8:9  root stylesheet
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+More info and automated migrator: https://sass-lang.com/d/import
+  ╷
+9 │ @import "./modal.scss";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    stdin 9:9  root stylesheet
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+355 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+356 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+357 │               padding: 16px;
+    │               ^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 357:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+348 │ ┌             &__items {
+349 │ │                 display: grid;
+350 │ │                 grid-template-columns: repeat(3, 1fr);
+351 │ │                 gap: 8px;
+352 │ │                 margin-bottom: 16px;
+353 │ │             }
+    │ └─── nested rule
+... │
+358 │               border-radius: 9px;
+    │               ^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 358:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+354 │               background: #15101D;
+    │               ^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 354:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+344 │ ┌             &__items {
+345 │ │                 display: grid;
+346 │ │                 grid-template-columns: repeat(3, 1fr);
+347 │ │                 gap: 8px;
+348 │ │                 height: 334px;
+349 │ │                 margin-bottom: 16px;
+350 │ │                 padding: 0 16px;
+351 │ │
+352 │ │             }
+    │ └─── nested rule
+... │
+355 │               border: 2px solid var(--color-secondary);
+    │               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 355:13  root stylesheet
+Deprecation Warning [mixed-decls]: Sass's behavior for declarations that appear after nested
+rules will be changing to match the behavior specified by CSS in an upcoming
+version. To keep the existing behavior, move the declaration above the nested
+rule. To opt into the new behavior, wrap the declaration in `& {}`.
+More info: https://sass-lang.com/d/mixed-decls
+    ╷
+340 │ ┌             &__desc {
+341 │ │                 padding: 0 16px;
+342 │ │             }
+    │ └─── nested rule
+... │
+356 │               padding: 16px 0;
+    │               ^^^^^^^^^^^^^^^ declaration
+    ╵
+    stdin 356:13  root stylesheet
+Warning: 3 repetitive deprecation warnings omitted.
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+More info: https://sass-lang.com/d/legacy-js-api
+LINE LIMIT EXCEEDED

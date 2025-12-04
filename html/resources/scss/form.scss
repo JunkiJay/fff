@@ -1,0 +1,174 @@
+.form {
+    display: flex;
+    flex-direction: column;
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    &__append-button {
+        background: var(--color-primary);
+        color: var(--color-text);
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__label {
+        color: var(--color-text);
+        font-size: 16px;
+        margin-bottom: 8px;
+        display: flex;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    .form__button {
+        @media (hover: hover) {
+            &:hover {
+                background: var(--color-primary-hover);
+                color: var(--color-text);
+            }
+        }
+    }
+    &__input {
+        color: var(--color-text);
+        height: 40px;
+        width: 100%;
+        background: var(--color-form);
+        display: flex;
+        border: 1px solid var(--color-form-border);
+        border-radius: 8px;
+        padding: 0 10px;
+        font-size: 14px;
+        font-family: "Segoe UI", sans-serif;
+        outline: none;
+
+        &-append-right {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-right: none;
+        }
+        input {
+            background: var(--color-form);
+            outline: none;
+            width: 100%;
+        }
+        svg {
+            fill: var(--color-content);
+            stroke: var(--color-negative);
+        }
+        .form__button {
+            display: none;
+            &:hover {
+                background-color: var(--color-primary);
+            }
+        }
+        @media (max-width: 1024px) {
+            & {
+                padding: 0;
+                overflow: hidden;
+            }
+            .form__button {
+                display: block;
+                height: 100%;
+                border: none;
+                max-width: 60px;
+                border-radius: 0;
+                &:nth-child(3) {
+                    order: 1;
+                    border-right: 1px solid var(--color-form-border);
+                    width: 42px;
+                    flex: none;
+                }
+                &:nth-child(4) {
+                    order: 2;
+                    border-right: 1px solid var(--color-form-border);
+                    width: 42px;
+                    flex: none;
+                }
+                &:nth-child(5) {
+                    order: 5;
+                    border-left: 1px solid var(--color-form-border);
+                    width: 42px;
+                    flex: none;
+                }
+                &:nth-child(6) {
+                    order: 6;
+                    border-left: 1px solid var(--color-form-border);
+                    width: 42px;
+                    flex: none;
+                }
+            }
+            input {
+                order: 3;
+                padding-left: 12px;
+            }
+            .form__trash {
+                order: 4;
+                padding-right: 12px;
+            }
+        }
+        @media (max-width: 420px) {
+            .form__button {
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5),
+                &:nth-child(6) {
+                    flex: auto;
+                    width: 70px !important;
+                }
+            }
+            .form__trash {
+                padding-right: 5px;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__button {
+        height: 32px;
+        width: 100%;
+        background: var(--color-form);
+        color: var(--color-text);
+        border: 1px solid #ced4da;
+        font-size: 14px;
+        font-family: Oswald, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        padding: 0px !important;
+
+        &-append-left {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-left: none;
+        }
+    }
+
+    &__button-big {
+        height: 40px;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+
+    .button {
+        width: 100% !important;
+    }
+}

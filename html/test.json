@@ -1,0 +1,25 @@
+{
+  "data": {
+    "id": "e5d4096e-2389-49c8-9f5a-f63201ef3193",
+    "type": "withdrawal",
+    "attributes": {
+      "uuid": "e5d4096e-2389-49c8-9f5a-f63201ef3193",
+      "client_merchant_id": "158566",
+      "external_order_id": "45106",
+      "payment_status": "transferring",
+      "national_currency_amount": "3800.0",
+      "initial_amount": "3800.0",
+      "national_currency": "RUB",
+      "cryptocurrency_commission_amount": 1.4087982333175837,
+      "national_currency_commission_amount": 114.0,
+      "arbitration": false,
+      "arbitration_reason": null,
+      "rate": "80.92003333333334",
+      "commission_percentage": "3.0",
+      "sbp_bank": "Т-Банк",
+      "card_number": "+79096882608",
+      "sbp_phone_number": null,
+      "requisite_type": null
+    }
+  }
+}

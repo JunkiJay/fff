@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
+@import "./variables.scss";
+@import "./reset.scss";
+@import "./utils.scss";
+@import "./loader.scss";
+@import "./modal.scss";
+@import "./noty.scss";
+@import "./form.scss";
+@import "./fonts.scss";
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    //outline: 1px solid red;
+}
+
+body {
+    font-family: Rubik !important;
+    background-color: var(--color-bg);
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+    main {
+        width: calc(100% - (100vw - 100%));
+    }
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+.vue-notification {
+    font-size: 15px;
+}
+input {
+    outline: none;
+}
+.vueperslides__parallax-wrapper {
+    aspect-ratio: 2.775;
+    padding-bottom: inherit !important;
+}
+
+.vueperslides__bullet {
+    &--active {
+        .default {
+            border: 3px solid #8d24d5 !important;
+        }
+    }
+    .default {
+        width: 16px;
+        height: 16px;
+        opacity: 0.6;
+        background-color: #ffffff;
+    }
+}
+.vueperslides__bullet {
+    margin: 0 4px 16px 4px;
+}
+.vueperslides__arrow {
+    display: none;
+}
+@media (max-width: 1024px) {
+    .slick-track {
+        margin: 0 -8px 0 0;
+    }
+    .slick-slide {
+        padding: 0 8px;
+    }
+}
+@media (max-width: 768px) {
+    .vueperslides__parallax-wrapper {
+        aspect-ratio: 1.42;
+    }
+    .vueperslides__bullet {
+        display: none !important;
+    }
+}
+.repost {
+    &__bonus {
+        &__list {
+            span {
+                b {
+                    color: var(--color-primary);
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.router-link-exact-active {
+    button {
+        background-color: var(--color-primary) !important;
+    }
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: none;
+}

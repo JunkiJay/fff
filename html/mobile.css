@@ -1,0 +1,2064 @@
+/* Mobile */
+
+position: relative;
+width: 360px;
+height: 1215px;
+
+background: #09040F;
+
+
+/* Link */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 246px;
+left: 790px;
+top: 2073.5px;
+bottom: -954.5px;
+
+background: rgba(255, 255, 255, 0.05);
+border: 1px solid rgba(255, 255, 255, 0.15);
+border-radius: 24px;
+
+
+/* FruitCandy.jpg */
+
+position: absolute;
+width: 60px;
+height: 78px;
+left: 9px;
+top: 9px;
+
+background: url(.jpg);
+border-radius: 16px;
+
+
+/* Rectangle */
+
+position: absolute;
+height: 21.77px;
+left: 79px;
+right: 9px;
+top: 9px;
+
+
+
+/* Rectangle */
+
+position: absolute;
+height: 16.94px;
+left: 79px;
+right: 9px;
+top: 36.77px;
+
+
+
+/* Rectangle */
+
+position: absolute;
+height: 19.36px;
+left: 79px;
+right: 9px;
+top: 69.7px;
+
+
+
+/* Frame 382 */
+
+position: absolute;
+width: 328px;
+height: 430px;
+left: 16px;
+top: 747px;
+
+
+
+/* Heading 2 → топ турнира */
+
+position: absolute;
+width: 158px;
+height: 29px;
+left: 2px;
+top: 0px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 29px;
+/* identical to box height, or 160% */
+display: flex;
+align-items: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* история */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 328px;
+height: 389px;
+left: calc(50% - 328px/2);
+top: 41px;
+overflow: scroll;
+
+background: #15101D;
+border: 1px solid rgba(62, 59, 71, 0.8);
+border-radius: 15px;
+
+
+/* Frame 381 */
+
+position: absolute;
+width: 296px;
+height: 19px;
+left: 16px;
+top: 16px;
+
+
+
+/* Cell → Система */
+
+position: absolute;
+width: 72px;
+height: 19px;
+left: 0px;
+top: 0px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Cell → Система */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 88px;
+top: 0px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Cell → Система */
+
+position: absolute;
+width: 73px;
+height: 19px;
+left: 143px;
+top: 0px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Cell → Сумма */
+
+position: absolute;
+width: 71px;
+height: 19px;
+left: 225px;
+top: 0px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Frame 379 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 296px;
+height: 324px;
+left: 16px;
+top: 49px;
+
+
+
+/* Line 3 */
+
+width: 296px;
+height: 0px;
+
+border: 1px solid rgba(62, 59, 71, 0.8);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 333 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 159px;
+
+width: 296px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Cell → Система */
+
+margin: 0 auto;
+width: 76px;
+height: 19px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 62px;
+height: 20px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 83px;
+height: 24px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* identical to box height, or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Component 9 */
+
+margin: 0 auto;
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 0px;
+height: 12px;
+left: 10px;
+top: 4px;
+
+border: 1.3px solid rgba(255, 255, 255, 0.3);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 0px;
+height: 12px;
+left: 4px;
+top: 10px;
+
+border: 1.3px solid #5B5861;
+transform: rotate(90deg);
+
+
+/* Line 4 */
+
+width: 296px;
+height: 0px;
+
+border: 1px solid rgba(62, 59, 71, 0.8);
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 334 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 159px;
+
+width: 296px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Cell → Система */
+
+margin: 0 auto;
+width: 76px;
+height: 19px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 62px;
+height: 20px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 83px;
+height: 24px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* identical to box height, or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Component 9 */
+
+margin: 0 auto;
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 0px;
+height: 12px;
+left: 10px;
+top: 4px;
+
+border: 1.3px solid rgba(255, 255, 255, 0.3);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 0px;
+height: 12px;
+left: 4px;
+top: 10px;
+
+border: 1.3px solid #5B5861;
+transform: rotate(90deg);
+
+
+/* Line 5 */
+
+width: 296px;
+height: 0px;
+
+border: 1px solid rgba(62, 59, 71, 0.8);
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 337 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 159px;
+
+width: 296px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Cell → Система */
+
+margin: 0 auto;
+width: 76px;
+height: 19px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 62px;
+height: 20px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 83px;
+height: 24px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* identical to box height, or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Component 9 */
+
+margin: 0 auto;
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 0px;
+height: 12px;
+left: 10px;
+top: 4px;
+
+border: 1.3px solid rgba(255, 255, 255, 0.3);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 0px;
+height: 12px;
+left: 4px;
+top: 10px;
+
+border: 1.3px solid #5B5861;
+transform: rotate(90deg);
+
+
+/* Line 6 */
+
+width: 296px;
+height: 0px;
+
+border: 1px solid rgba(62, 59, 71, 0.8);
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 335 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 159px;
+
+width: 296px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Cell → Система */
+
+margin: 0 auto;
+width: 76px;
+height: 19px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 62px;
+height: 20px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 83px;
+height: 24px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* identical to box height, or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Component 9 */
+
+margin: 0 auto;
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 0px;
+height: 12px;
+left: 10px;
+top: 4px;
+
+border: 1.3px solid rgba(255, 255, 255, 0.3);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 0px;
+height: 12px;
+left: 4px;
+top: 10px;
+
+border: 1.3px solid #5B5861;
+transform: rotate(90deg);
+
+
+/* Line 7 */
+
+width: 296px;
+height: 0px;
+
+border: 1px solid rgba(62, 59, 71, 0.8);
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 336 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 159px;
+
+width: 296px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Cell → Система */
+
+margin: 0 auto;
+width: 76px;
+height: 19px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 62px;
+height: 20px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 83px;
+height: 24px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* identical to box height, or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Component 9 */
+
+margin: 0 auto;
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 0px;
+height: 12px;
+left: 10px;
+top: 4px;
+
+border: 1.3px solid rgba(255, 255, 255, 0.3);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 0px;
+height: 12px;
+left: 4px;
+top: 10px;
+
+border: 1.3px solid #5B5861;
+transform: rotate(90deg);
+
+
+/* Line 8 */
+
+width: 296px;
+height: 0px;
+
+border: 1px solid rgba(62, 59, 71, 0.8);
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 338 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 159px;
+
+width: 296px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Cell → Система */
+
+margin: 0 auto;
+width: 76px;
+height: 19px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 62px;
+height: 20px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 83px;
+height: 24px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* identical to box height, or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Component 9 */
+
+margin: 0 auto;
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 0px;
+height: 12px;
+left: 10px;
+top: 4px;
+
+border: 1.3px solid rgba(255, 255, 255, 0.3);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 0px;
+height: 12px;
+left: 4px;
+top: 10px;
+
+border: 1.3px solid #5B5861;
+transform: rotate(90deg);
+
+
+/* Line 9 */
+
+width: 296px;
+height: 0px;
+
+border: 1px solid rgba(62, 59, 71, 0.8);
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 339 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 159px;
+
+width: 296px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 13;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Cell → Система */
+
+margin: 0 auto;
+width: 76px;
+height: 19px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 62px;
+height: 20px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 83px;
+height: 24px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* identical to box height, or 200% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Component 9 */
+
+margin: 0 auto;
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 0px;
+height: 12px;
+left: 10px;
+top: 4px;
+
+border: 1.3px solid rgba(255, 255, 255, 0.3);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 0px;
+height: 12px;
+left: 4px;
+top: 10px;
+
+border: 1.3px solid #5B5861;
+transform: rotate(90deg);
+
+
+/* Frame 386 */
+
+position: absolute;
+width: 328px;
+height: 40px;
+left: 16px;
+top: 12px;
+
+
+
+/* Link */
+
+position: absolute;
+width: 40px;
+height: 40px;
+left: 0px;
+top: calc(50% - 40px/2);
+
+
+
+/* logo */
+
+position: absolute;
+width: 40px;
+height: 40px;
+left: 0px;
+top: 0px;
+
+
+
+/* logo.svg fill */
+
+position: absolute;
+width: 40px;
+height: 40px;
+left: 0px;
+top: 0px;
+
+
+
+/* logo.svg */
+
+position: absolute;
+width: 40px;
+height: 40px;
+left: calc(50% - 40px/2);
+top: calc(50% - 40px/2);
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: url(b.png);
+
+
+/* Overlay */
+
+position: absolute;
+width: 62.3px;
+height: 32px;
+left: 52px;
+top: calc(50% - 32px/2);
+
+background: rgba(71, 213, 36, 0.145);
+border-radius: 8px;
+
+
+/* Overlay */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 8px;
+top: calc(50% - 16px/2);
+
+background: rgba(0, 255, 0, 0.063);
+border-radius: 8px;
+
+
+/* Background */
+
+position: absolute;
+width: 8px;
+height: 8px;
+left: calc(50% - 8px/2);
+top: calc(50% - 8px/2);
+
+background: #00FF00;
+border-radius: 4px;
+
+
+/* Background */
+
+position: absolute;
+width: 4px;
+height: 4px;
+left: calc(50% - 4px/2);
+top: calc(50% - 4px/2);
+
+background: #FFFFFF;
+border-radius: 2px;
+
+
+/* 151 */
+
+position: absolute;
+width: 25.65px;
+height: 24px;
+left: 29px;
+top: 4px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 24px;
+/* identical to box height, or 200% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Button */
+
+position: absolute;
+width: 150px;
+height: 38px;
+right: 0px;
+top: calc(50% - 38px/2 - 1px);
+
+background: #8D24D5;
+border-radius: 7px;
+
+
+/* Авторизоваться */
+
+position: absolute;
+width: 98px;
+height: 17px;
+left: calc(50% - 98px/2);
+top: calc(50% - 17px/2 - 0.5px);
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 144.3%;
+/* or 17px */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Frame 2087326578 */
+
+position: absolute;
+width: 328px;
+height: 123px;
+left: 16px;
+top: 68px;
+
+
+
+/* Border */
+
+position: absolute;
+height: 104px;
+left: 0px;
+right: 0px;
+top: 19px;
+
+border-radius: 8px;
+
+
+/* tourners 1 */
+
+position: absolute;
+width: 328px;
+height: 123px;
+left: 0px;
+top: -19px;
+
+background: url(tourners.png);
+border-radius: 0px;
+
+
+/* Heading 2 → Еженедельный турнир
+StimuleWeek */
+
+position: absolute;
+width: 178px;
+height: 52px;
+left: 13px;
+top: 26px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 131%;
+/* or 26px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* tourners 2 */
+
+position: absolute;
+width: 240px;
+height: 45px;
+left: 73px;
+top: 0px;
+
+background: url(tourners.png);
+border-radius: 0px;
+
+
+/* Frame 2087326579 */
+
+position: absolute;
+width: 328px;
+height: 484px;
+left: 16px;
+top: 227px;
+
+
+
+/* Heading 2 → топ турнира */
+
+position: absolute;
+width: 164px;
+height: 29px;
+left: 0px;
+top: 0px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 29px;
+/* identical to box height, or 160% */
+display: flex;
+align-items: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* Frame 2087326548 */
+
+position: absolute;
+width: 328px;
+height: 229px;
+left: 0px;
+top: 22px;
+
+
+
+/* Border */
+
+position: absolute;
+height: 210px;
+left: 0px;
+right: 0px;
+top: 19px;
+
+background: #FFFFFF;
+border-radius: 8px;
+
+
+/* Union */
+
+position: absolute;
+width: 649px;
+height: 210px;
+left: -177.5px;
+top: 0px;
+
+background: url(баннер кубкт.png);
+
+
+/* баннер кубкт 1 */
+
+position: absolute;
+width: 649px;
+height: 210px;
+left: -177.5px;
+top: 0px;
+
+background: url(баннер кубкт.png);
+border-radius: 19px;
+
+
+/* Background */
+
+position: absolute;
+width: 119px;
+height: 30px;
+left: 0px;
+top: 0px;
+
+background: #1F1B29;
+border-radius: 13px 0px 20px;
+
+
+/* По сумме ставок */
+
+position: absolute;
+width: 92px;
+height: 17px;
+left: 13px;
+top: calc(50% - 17px/2 - 0.5px);
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 11px;
+line-height: 150%;
+/* identical to box height, or 16px */
+display: flex;
+align-items: center;
+
+color: #6D6E77;
+
+
+
+/* Heading 2 → Еженедельный турнир
+StimuleWeek */
+
+position: absolute;
+width: 216px;
+height: 52px;
+left: 13px;
+top: 38px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 129%;
+/* or 26px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Frame 377 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 4px;
+
+position: absolute;
+width: 179px;
+height: 19px;
+left: 13px;
+top: 96px;
+
+
+
+/* Призовой фонд: */
+
+width: 96px;
+height: 19px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 161.4%;
+/* or 19px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Strong → 100 000 ₽ */
+
+width: 79px;
+height: 19px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 120.4%;
+/* or 19px */
+display: flex;
+align-items: flex-end;
+letter-spacing: -0.03em;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2087326544 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 8px;
+gap: 6px;
+
+position: absolute;
+width: 89px;
+height: 25px;
+left: 13px;
+top: 127px;
+
+background: #1F1B29;
+border-radius: 5px;
+
+
+/* Subtract */
+
+width: 13px;
+height: 13px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Ellipse 2537 */
+
+position: absolute;
+width: 13px;
+height: 13px;
+left: 8px;
+top: 6px;
+
+background: #D9D9D9;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.29%;
+right: 81.27%;
+top: 39.17%;
+bottom: 43.5%;
+
+border: 1.1765px solid #357BF6;
+
+
+/* 7д 13ч 15м */
+
+width: 54px;
+height: 11px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 11px;
+line-height: 100%;
+/* identical to box height, or 11px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Button */
+
+position: absolute;
+width: 302px;
+height: 38px;
+left: 13px;
+top: 160px;
+
+background: #8D24D5;
+border-radius: 7px;
+
+
+/* Подробнее */
+
+position: absolute;
+width: 67px;
+height: 17px;
+left: calc(50% - 67px/2 + 0.5px);
+top: calc(50% - 17px/2 - 0.5px);
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 144.3%;
+/* or 17px */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Union */
+
+position: absolute;
+width: 115px;
+height: 173px;
+left: 213px;
+top: 0px;
+
+background: url(баннер кубкт.png);
+
+
+/* баннер кубкт 2 */
+
+position: absolute;
+width: 115px;
+height: 173px;
+left: 213px;
+top: 0px;
+
+background: url(баннер кубкт.png);
+border-radius: 40px;
+
+
+/* Border */
+
+position: absolute;
+height: 210px;
+left: 0px;
+right: 0px;
+top: 274px;
+
+background: linear-gradient(269.99deg, rgba(12, 1, 45, 0) 0.01%, rgba(12, 1, 45, 0.73) 99.99%), url(1920x250 копия.jpg);
+border-radius: 8px;
+
+
+/* ChatGPT Image 23 июн. 2025 г., 20_37_52 1 */
+
+position: absolute;
+width: 174px;
+height: 229px;
+left: 154px;
+top: -19px;
+
+background: url(ChatGPT Image 21 авг. 2025 г., 01_43_39_Nero_AI_Image_Upscaler_Anime_Face.png);
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Background */
+
+position: absolute;
+width: 121px;
+height: 30px;
+left: 0px;
+top: 0px;
+
+background: #1F1B29;
+border-radius: 13px 0px 20px;
+
+
+/* Максимальный X */
+
+position: absolute;
+width: 94px;
+height: 17px;
+left: 13px;
+top: calc(50% - 17px/2 - 0.5px);
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 11px;
+line-height: 150%;
+/* identical to box height, or 16px */
+display: flex;
+align-items: center;
+
+color: #6D6E77;
+
+
+
+/* Heading 2 → Еженедельный турнир
+StimuleWeek */
+
+position: absolute;
+width: 216px;
+height: 52px;
+left: 13px;
+top: 38px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 129%;
+/* or 26px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Frame 377 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 4px;
+
+position: absolute;
+width: 179px;
+height: 19px;
+left: 13px;
+top: 96px;
+
+
+
+/* Призовой фонд: */
+
+width: 96px;
+height: 19px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 161.4%;
+/* or 19px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Strong → 100 000 ₽ */
+
+width: 79px;
+height: 19px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 120.4%;
+/* or 19px */
+display: flex;
+align-items: flex-end;
+letter-spacing: -0.03em;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2087326544 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 8px;
+gap: 6px;
+
+position: absolute;
+width: 132px;
+height: 25px;
+left: 13px;
+top: 127px;
+
+background: #1F1B29;
+border-radius: 5px;
+
+
+/* Subtract */
+
+width: 13px;
+height: 13px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Ellipse 2537 */
+
+position: absolute;
+width: 13px;
+height: 13px;
+left: 8px;
+top: 6px;
+
+background: #D9D9D9;
+
+
+/* Vector */
+
+position: absolute;
+left: 10.99%;
+right: 87.37%;
+top: 39.17%;
+bottom: 43.5%;
+
+border: 1.1765px solid #357BF6;
+
+
+/* Скоро запустится */
+
+width: 97px;
+height: 11px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 11px;
+line-height: 100%;
+/* identical to box height, or 11px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Button */
+
+position: absolute;
+width: 302px;
+height: 38px;
+left: 13px;
+top: 160px;
+
+background: #8D24D5;
+border-radius: 7px;
+
+
+/* Подробнее */
+
+position: absolute;
+width: 67px;
+height: 17px;
+left: calc(50% - 67px/2 + 0.5px);
+top: calc(50% - 17px/2 - 0.5px);
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 144.3%;
+/* or 17px */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+

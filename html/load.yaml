@@ -1,0 +1,21 @@
+pandora:
+  config: |
+    [job]
+    rampup = 5s             ; Время разгона нагрузки
+    duration = 1m           ; Общее время теста
+    connections = 10        ; Количество одновременных соединений
+    ; Таймауты запросов
+    connection_timeout = 5s
+    request_timeout = 10s
+
+    [job.scenario]
+    ; Настройка сценария тестирования
+    [job.scenario.step.1]
+    id = "step_1"
+    type = "http"           ; Тип нагрузки HTTP
+    timeout = 10s
+    method = "GET"          ; HTTP-метод
+    url = "http://example.com"  ; Целевой URL
+    headers = [
+      "User-Agent: pandora"
+    ]
