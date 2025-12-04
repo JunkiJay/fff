@@ -1,0 +1,294 @@
+<template>
+    <div class="swiper-container my-slider" @mouseenter="pauseAutoSlide" @mouseleave="startAutoSlide">
+        <swiper
+            ref="mySwiper"
+            :modules="[Autoplay]"
+            :slides-per-view="1"
+            :centered-slides="true"
+            :observer="true"
+            :loop="true"
+            :observe-parents="true"
+            :autoplay="{ delay: 500000, disableOnInteraction: false }"
+            @swiper="onSwiperReady"
+            @slide-change-transition-end="onSlideChange"
+            @resize="onResize"
+            class="banners-swiper"
+        >
+            <swiper-slide v-for="(video) in videos" :key="video.id" class="swiper-slide">
+                <div class="slide">
+                    <img :src="video.fallbackImage" class="slide-media" alt="Fallback Image" preload="auto" />
+                    <div class="buttons-container">
+                        <div v-for="button in video.buttons" :key="button.id" :class="button.bg"
+                            @click="navigateTo(button.to)" class="slide__button">
+                            {{ button.text }}
+                        </div>
+                    </div>
+                </div>
+            </swiper-slide>
+        </swiper>
+    </div>
+</template>
+
+<script>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Autoplay } from 'swiper/modules';
+
+export default {
+    name: 'SlotsBannerNew',
+    components: {
+        Swiper,
+        SwiperSlide,
+    },
+    data() {
+        return {
+            Autoplay,
+            swiper: null,
+            swiperOptions: {
+                // spaceBetween: -40,
+                loop: true,
+                centeredSlides: true,
+                updateOnWindowResize: true,
+                autoplay: {
+                    delay: 500000,
+                    disableOnInteraction: false,
+                },
+                observer: true,
+                observeParents: true,
+                on: {
+                    init: this.onSwiperInit,
+                    slideChangeTransitionEnd: this.onSlideChange,
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                    },
+                    1300: {
+                        slidesPerView: 'auto',
+                    },
+                },
+            },
+            videos: [
+                {
+                    id: 1,
+                    src: '/assets/banner/banner3.mp4',
+                    fallbackImage: '/assets/banner/banner_1.png',
+                    buttons: [
+                        { id: 1, text: 'Участвовать', bg: 'bg-main', to: '/tournament' },
+                        { id: 2, text: 'Подробнее', bg: 'slide__button_outline', to: '/tournament' },
+                    ],
+                },
+                {
+                    id: 2,
+                    src: "/assets/banner/banner2.mp4",
+                    fallbackImage: "/assets/banner/banner_2.png",
+                    buttons: [
+                        { id: 1, text: "Присоединиться", bg: "bg-main", to: "/bonus" },
+                    ],
+                },
+                {
+                    id: 3,
+                    src: "/assets/banner/banner1.mp4",
+                    fallbackImage: "/assets/banner/banner_3.png",
+                    buttons: [
+                        { id: 1, text: "Вывести", bg: "bg-main", to: "/withdraw" },
+                        { id: 2, text: "Пополнить", bg: "slide__button_outline", to: "/pay" },
+                    ],
+                },
+                {
+                    id: 4,
+                    src: "/assets/banner/banner5.mp4",
+                    fallbackImage: "/assets/banner/banner_4.png",
+                    buttons: [
+                        { id: 1, text: "Забрать кешбэк", bg: "bg-main", to: "/bonus" },
+                    ],
+                },
+            ],
+        };
+    },
+    mounted() {
+        this.$nextTick(() => {
+            setTimeout(() => {
+                this.manageVideoPlayback();
+            }, 100);
+        });
+        window.addEventListener('resize', this.onResize);
+    },
+    beforeUnmount() {
+        window.removeEventListener('resize', this.onResize);
+    },
+    methods: {
+        // Удалено неверное размещение Autoplay в methods
+        onSwiperReady(swiper) {
+            this.swiper = swiper;
+            // Обновим и запустим автоплей, чтобы hover-пауза работала через this.swiper
+            this.swiper?.update?.();
+            this.swiper?.autoplay?.start?.();
+        },
+        onSwiperInit() {
+            this.manageVideoPlayback();
+        },
+        onSlideChange() {
+            this.manageVideoPlayback();
+        },
+        navigateTo(to) {
+            this.$router.push(to);
+        },
+        manageVideoPlayback() {
+            const slides = this.$el.querySelectorAll('.swiper-slide');
+
+            slides.forEach((slide) => {
+                const videoElement = slide.querySelector('video');
+                const buttonContainer = slide.querySelector('.buttons-container');
+
+                if (slide.classList.contains('swiper-slide-active')) {
+                    if (videoElement) {
+                        videoElement.play().catch((e) => {
+                            console.error('Ошибка воспроизведения видео:', e);
+                        });
+                    }
+                    if (buttonContainer) {
+                        buttonContainer.style.visibility = 'visible';
+                    }
+                } else {
+                    if (videoElement) {
+                        videoElement.pause();
+                    }
+                    if (buttonContainer) {
+                        buttonContainer.style.visibility = 'hidden';
+                    }
+                }
+            });
+        },
+        handleVideoError(index) {
+            this.videos[index].error = true;
+        },
+        onResize() {
+            if (this.$refs.mySwiper.$el && this.$refs.mySwiper.$el.swiper) {
+                this.$refs.mySwiper.$el.swiper.update();
+                this.manageVideoPlayback();
+            }
+        },
+        pauseAutoSlide() {
+            if (this.$refs.mySwiper && this.$refs.mySwiper.$el.swiper) {
+                this.$refs.mySwiper.$el.swiper.autoplay.stop();
+            }
+        },
+        startAutoSlide() {
+            if (this.$refs.mySwiper.$el && this.$refs.mySwiper.$el.swiper) {
+                this.$refs.mySwiper.$el.swiper.autoplay.start();
+            }
+        }
+    },
+};
+</script>
+
+<style scoped lang="scss">
+.my-slider,
+.swiper-container,
+.banners-swiper {
+    overflow: visible;
+    height: 100%;
+}
+
+.swiper-slide {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: scale(0.9); /* Уменьшение размера по умолчанию */
+    opacity: 0.7; /* Прозрачность по умолчанию */
+    z-index: 1; /* Уменьшение z-index по умолчанию */
+}
+
+.swiper-slide-active {
+    transform: scale(1); /* Увеличение размера для активного слайда */
+    opacity: 1; /* Полная прозрачность для активного слайда */
+    z-index: 3; /* Высокий z-index для активного слайда */
+    /* margin: 0 -40px !important;    */
+    /* margin-left: -80px !important; */
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+    transform: scale(0.9); /* Средний размер для соседних слайдов */
+    opacity: 0.8; /* Прозрачность соседних слайдов */
+    z-index: 2; /* Средний z-index для соседних слайдов */
+    /* margin-right: 0; /* Убираем влияние margin */
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.slide-media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.buttons-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 12px;
+    visibility: hidden;
+    z-index: 4;
+}
+
+.slide__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 234px;
+    height: 64px;
+
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.2px;
+    color: #fff;
+
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.bg-main {
+    background: linear-gradient(93.19deg, #8d24d5 0%, #49136f 100%);
+}
+
+.slide__button_outline {
+    backdrop-filter: blur(7.7px);
+    border: 2px solid #fff;
+}
+
+@media (max-width: 1023px) {
+    .swiper-slide {
+        transform: scale(0.9); /* Немного больший размер на маленьких экранах */
+        opacity: 0.8;
+    }
+
+    .swiper-slide-prev,
+    .swiper-slide-next {
+        transform: scale(0.9);
+        opacity: 0.8;
+    }
+
+    .slide__button {
+        width: 130px;
+        height: 35px;
+        font-size: 13px;
+        line-height: 15.73px;
+    }
+
+    .slide-media {
+        border-radius: 16px;
+    }
+}
+</style>

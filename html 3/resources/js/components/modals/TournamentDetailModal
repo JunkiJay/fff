@@ -1,0 +1,94 @@
+<template>
+  <teleport to="body">
+    <div v-if="modelValue" class="modal-backdrop" @click="onBackdrop">
+      <div class="modal" role="dialog" aria-modal="true" aria-label="Информация о турнире" @keydown.esc="close" tabindex="0">
+        <header class="modal__header">
+          <h3 class="modal__title">{{ tournament?.title || tournament?.name || 'Турнир' }}</h3>
+          <button class="modal__close" @click="close" aria-label="Закрыть">×</button>
+        </header>
+
+        <section class="modal__body">
+          <div class="modal__row" v-if="tournament?.description">
+            <strong>Описание:</strong>
+            <div>{{ tournament.description }}</div>
+          </div>
+
+          <div class="modal__row" v-if="tournament?.start_at">
+            <strong>Начало:</strong>
+            <div>{{ formatDate(tournament.start_at) }}</div>
+          </div>
+
+          <div class="modal__row" v-if="tournament?.end_at">
+            <strong>Окончание:</strong>
+            <div>{{ formatDate(tournament.end_at) }}</div>
+          </div>
+
+          <div class="modal__row" v-if="tournament?.prize_pool">
+            <strong>Призовой фонд:</strong>
+            <div>{{ tournament.prize_pool }}</div>
+          </div>
+
+          <div class="modal__row" v-if="tournament?.buy_in">
+            <strong>Взнос (buy-in):</strong>
+            <div>{{ tournament.buy_in }}</div>
+          </div>
+
+          <!-- Дополнительные поля по необходимости -->
+        </section>
+
+        <footer class="modal__footer">
+          <button class="btn" @click="close">Закрыть</button>
+          <slot name="actions" :tournament="tournament"></slot>
+        </footer>
+      </div>
+    </div>
+  </teleport>
+</template>
+
+<script>
+export default {
+  name: 'TournamentModal',
+  props: {
+    modelValue: { type: Boolean, default: false }, // для v-model
+    tournament: { type: Object, default: () => ({}) }
+  },
+  emits: ['update:modelValue'],
+  methods: {
+    close() {
+      this.$emit('update:modelValue', false)
+    },
+    onBackdrop(e) {
+      if (e.target === e.currentTarget) this.close()
+    },
+    // Формат: YYYY-MM-DD, безопасно для ISO-строк с Z (UTC)
+    formatDate(iso) {
+      if (!iso) return ''
+      try {
+        return new Date(iso).toISOString().slice(0, 10)
+      } catch {
+        return ''
+      }
+    }
+  }
+}
+</script>
+
+<style scoped>
+.modal-backdrop {
+  position: fixed; inset: 0; background: rgba(0,0,0,.5);
+  display: flex; align-items: center; justify-content: center; z-index: 1000;
+}
+.modal {
+  background: #fff; border-radius: 8px; width: min(640px, 92vw);
+  max-height: 90vh; overflow: auto; box-shadow: 0 10px 30px rgba(0,0,0,.2);
+  outline: none;
+}
+.modal__header, .modal__footer { padding: 16px 20px; border-bottom: 1px solid #eee; }
+.modal__footer { border-top: 1px solid #eee; border-bottom: 0; display: flex; gap: 8px; justify-content: flex-end; }
+.modal__title { margin: 0; font-size: 18px; }
+.modal__close { background: transparent; border: 0; font-size: 22px; line-height: 1; cursor: pointer; }
+.modal__body { padding: 16px 20px; display: grid; gap: 12px; }
+.modal__row { display: grid; gap: 4px; }
+.btn { padding: 8px 12px; border-radius: 6px; border: 1px solid #ddd; background: #f5f5f5; cursor: pointer; }
+.btn:hover { background: #eee; }
+</style>

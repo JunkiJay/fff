@@ -1,0 +1,3984 @@
+/* 1920 (Промежуточная) */
+
+position: relative;
+width: 1920px;
+height: 1586px;
+overflow-y: scroll;
+
+background: linear-gradient(0deg, #09040F, #09040F), #FFFFFF;
+
+
+/* Background */
+
+position: absolute;
+height: 72px;
+left: 405px;
+right: 405px;
+top: 0px;
+
+background: #1F1B29;
+border-radius: 8px;
+
+
+/* Link */
+
+position: absolute;
+height: 40px;
+left: 16px;
+right: 994px;
+top: calc(50% - 40px/2);
+
+background: rgba(240, 240, 240, 0.082);
+border-radius: 8px;
+
+
+/* Button */
+
+position: absolute;
+width: 100px;
+height: 40px;
+left: calc(50% - 100px/2);
+top: calc(50% - 40px/2);
+
+background: rgba(240, 240, 240, 0.082);
+border-radius: 8px;
+
+
+/* Главная */
+
+position: absolute;
+width: 63.75px;
+height: 19px;
+left: calc(50% - 63.75px/2 + 0.21px);
+top: 10px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Link */
+
+position: absolute;
+height: 40px;
+left: 124px;
+right: 886px;
+top: calc(50% - 40px/2);
+
+background: rgba(240, 240, 240, 0.082);
+border-radius: 8px;
+
+
+/* Button */
+
+position: absolute;
+width: 100px;
+height: 40px;
+left: calc(50% - 100px/2);
+top: calc(50% - 40px/2);
+
+background: rgba(240, 240, 240, 0.082);
+border-radius: 8px;
+
+
+/* FAQ */
+
+position: absolute;
+width: 31.34px;
+height: 19px;
+left: calc(50% - 31.34px/2 + 0.19px);
+top: 10px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Button */
+
+position: absolute;
+width: 169.94px;
+height: 44px;
+right: 16px;
+top: calc(50% - 44px/2);
+
+/* #8D24D5 */
+background: #8D24D5;
+border-radius: 8px;
+
+
+/* Авторизоваться */
+
+position: absolute;
+width: 130.24px;
+height: 24px;
+left: calc(50% - 130.24px/2 + 0.15px);
+top: 10px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Frame 2087326568 */
+
+position: absolute;
+width: 1110px;
+height: 165px;
+left: 405px;
+top: 88px;
+
+
+
+/* Border */
+
+position: absolute;
+height: 144px;
+left: 0px;
+right: 0px;
+top: 21px;
+
+background: url(2.png);
+border-radius: 15px;
+
+
+/* tourners 1 */
+
+position: absolute;
+width: 1110px;
+height: 145px;
+left: 0px;
+top: -1px;
+
+background: url(tourners.png);
+border-radius: 0px;
+
+
+/* Heading 2 → Еженедельный турнир
+StimuleWeek */
+
+position: absolute;
+width: 509px;
+height: 51px;
+left: 28px;
+top: 41px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 141%;
+/* identical to box height, or 51px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* tourners 2 */
+
+position: absolute;
+width: 380px;
+height: 86px;
+left: 573px;
+top: 0px;
+
+background: url(tourners.png);
+border-radius: 0px;
+
+
+/* Frame 2087326566 */
+
+position: absolute;
+width: 1110px;
+height: 266px;
+left: 405px;
+top: 1292px;
+
+
+
+/* Footer */
+
+position: absolute;
+height: 24px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+
+
+
+/* Link */
+
+position: absolute;
+width: 232.08px;
+left: 0px;
+top: 0px;
+bottom: 0px;
+
+
+
+/* Пользовательское соглашение */
+
+position: absolute;
+width: 232.46px;
+height: 19px;
+left: 0px;
+top: 2px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Link */
+
+position: absolute;
+width: 239.67px;
+left: 261.08px;
+top: 0px;
+bottom: 0px;
+
+
+
+/* Политика конфиденциальности */
+
+position: absolute;
+width: 240.06px;
+height: 19px;
+left: 0px;
+top: 2px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Stimule 一 2025 */
+
+position: absolute;
+width: 116.3px;
+height: 24px;
+left: 994.08px;
+top: 0px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Container */
+
+position: absolute;
+height: 174px;
+left: 0px;
+right: 0px;
+top: 0px;
+
+border-radius: 24px;
+
+
+/* Heading 2 → Лента выигрышей */
+
+position: absolute;
+width: 252.78px;
+height: 29.05px;
+left: 0px;
+top: 2.47px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+/* or 121% */
+display: flex;
+align-items: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* Button */
+
+position: absolute;
+width: 114px;
+height: 34px;
+left: 996px;
+top: calc(50% - 34px/2 - 70px);
+
+background: #8D24D5;
+border-radius: 8px;
+
+
+/* Подр */
+
+position: absolute;
+width: 73.17px;
+height: 19px;
+left: calc(50% - 73.17px/2 + 1.59px);
+top: calc(50% - 19px/2 - 0.5px);
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Container */
+
+position: absolute;
+height: 124px;
+left: 0px;
+right: 0px;
+top: 50px;
+overflow-y: scroll;
+
+border-radius: 20px;
+
+
+/* Link */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 268px;
+left: 0px;
+top: 0px;
+bottom: 0px;
+
+background: rgba(255, 255, 255, 0.05);
+border: 1px solid rgba(255, 255, 255, 0.15);
+border-radius: 24px;
+
+
+/* BigBassVegasDoubleDownDeluxe.jpg */
+
+position: absolute;
+width: 82px;
+height: 106px;
+left: 9px;
+top: 9px;
+
+background: url(.jpg);
+border-radius: 16px;
+
+
+/* 12.00 ₽ */
+
+position: absolute;
+width: 89.8px;
+height: 29.05px;
+left: 101px;
+top: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+/* or 121% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Александр Алекс.. */
+
+position: absolute;
+width: 148.8px;
+height: 19.36px;
+left: 101px;
+top: 52.05px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height, or 121% */
+display: flex;
+align-items: center;
+
+color: #9E9AA1;
+
+
+
+/* Big Bass Veg.. */
+
+position: absolute;
+width: 122px;
+height: 21px;
+left: 101px;
+top: 87.41px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+/* or 121% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Link */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 268px;
+left: 562px;
+top: 0px;
+bottom: 0px;
+
+background: rgba(255, 255, 255, 0.05);
+border: 1px solid rgba(255, 255, 255, 0.15);
+border-radius: 24px;
+
+
+/* BigBassVegasDoubleDownDeluxe.jpg */
+
+position: absolute;
+width: 82px;
+height: 106px;
+left: 9px;
+top: 9px;
+
+background: url(.jpg);
+border-radius: 16px;
+
+
+/* 12.00 ₽ */
+
+position: absolute;
+width: 89.8px;
+height: 29.05px;
+left: 101px;
+top: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+/* or 121% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Александр Алекс.. */
+
+position: absolute;
+width: 148.8px;
+height: 19.36px;
+left: 101px;
+top: 52.05px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height, or 121% */
+display: flex;
+align-items: center;
+
+color: #9E9AA1;
+
+
+
+/* Big Bass Veg.. */
+
+position: absolute;
+width: 122px;
+height: 21px;
+left: 101px;
+top: 87.41px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+/* or 121% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Link */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 268px;
+left: 280px;
+top: 0px;
+bottom: 0px;
+
+background: rgba(255, 255, 255, 0.05);
+border: 1px solid rgba(255, 255, 255, 0.15);
+border-radius: 24px;
+
+
+/* SleepingDragon.jpg */
+
+position: absolute;
+width: 82px;
+height: 106px;
+left: 9px;
+top: 9px;
+
+background: url(.jpg);
+border-radius: 16px;
+
+
+/* 2.60 ₽ */
+
+position: absolute;
+width: 78.02px;
+height: 29.05px;
+left: 101px;
+top: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+/* or 121% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Константин Аляб.. */
+
+position: absolute;
+width: 145.81px;
+height: 19.36px;
+left: 101px;
+top: 52.05px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height, or 121% */
+display: flex;
+align-items: center;
+
+color: #9E9AA1;
+
+
+
+/* Sleeping Dragon */
+
+position: absolute;
+width: 141.67px;
+height: 21px;
+left: 101px;
+top: 87.41px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+/* or 121% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Link */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 268px;
+left: 842px;
+top: 0px;
+bottom: 0px;
+
+background: rgba(255, 255, 255, 0.05);
+border: 1px solid rgba(255, 255, 255, 0.15);
+border-radius: 24px;
+
+
+/* SleepingDragon.jpg */
+
+position: absolute;
+width: 82px;
+height: 106px;
+left: 9px;
+top: 9px;
+
+background: url(.jpg);
+border-radius: 16px;
+
+
+/* 2.60 ₽ */
+
+position: absolute;
+width: 78.02px;
+height: 29.05px;
+left: 101px;
+top: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+/* or 121% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Константин Аляб.. */
+
+position: absolute;
+width: 145.81px;
+height: 19.36px;
+left: 101px;
+top: 52.05px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height, or 121% */
+display: flex;
+align-items: center;
+
+color: #9E9AA1;
+
+
+
+/* Sleeping Dragon */
+
+position: absolute;
+width: 141.67px;
+height: 21px;
+left: 101px;
+top: 87.41px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+/* or 121% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Frame 2087326565 */
+
+position: absolute;
+width: 1110px;
+height: 325px;
+left: 405px;
+top: 309px;
+
+
+
+/* Border */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 545px;
+height: 266px;
+left: 0px;
+top: 59px;
+
+background: #15101D;
+border-radius: 19px;
+
+
+/* баннер кубкт 1 */
+
+position: absolute;
+width: 797px;
+height: 266px;
+left: -78px;
+top: 0px;
+
+background: url(баннер кубкт.png);
+border-radius: 19px;
+
+
+/* Background */
+
+position: absolute;
+width: 182px;
+height: 40px;
+left: 0px;
+top: 0px;
+
+background: #1F1B29;
+border-radius: 24px 0px;
+
+
+/* По сумме ставок */
+
+position: absolute;
+width: 134px;
+height: 24px;
+left: 24px;
+top: calc(50% - 24px/2 - 1px);
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #6D6E77;
+
+
+
+/* Heading 2 → Еженедельный турнир
+StimuleWeek */
+
+position: absolute;
+width: 351px;
+height: 28px;
+left: 24px;
+top: 53px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 128%;
+/* or 28px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Frame 377 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 235px;
+height: 38px;
+left: 24px;
+top: 90px;
+
+
+
+/* Призовой фонд: */
+
+width: 128px;
+height: 38px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 38px;
+/* identical to box height, or 238% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Strong → 100 000 ₽ */
+
+width: 99px;
+height: 28px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 140.4%;
+/* identical to box height, or 28px */
+display: flex;
+align-items: flex-end;
+letter-spacing: -0.03em;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Button */
+
+position: absolute;
+width: 497px;
+height: 54px;
+left: 24px;
+top: 192px;
+
+background: #8D24D5;
+border-radius: 8px;
+
+
+/* Подробнее */
+
+position: absolute;
+width: 100px;
+height: 30px;
+left: calc(50% - 100px/2 - 0.5px);
+top: calc(50% - 30px/2 - 1px);
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 30px;
+/* identical to box height, or 167% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Frame 2087326546 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 12px 8px 13px;
+gap: 10px;
+
+position: absolute;
+width: 133px;
+height: 36px;
+left: 24px;
+top: 144px;
+
+background: #1F1B29;
+border-radius: 7px;
+
+
+/* Subtract */
+
+width: 20px;
+height: 20px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Ellipse 2537 */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 13px;
+top: 8px;
+
+background: #D9D9D9;
+
+
+/* Vector */
+
+position: absolute;
+left: 17.29%;
+right: 80.2%;
+top: 38.43%;
+bottom: 43.06%;
+
+border: 1.76471px solid #357BF6;
+
+
+/* 7д 13ч 15м */
+
+width: 78px;
+height: 16px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 100%;
+/* identical to box height, or 16px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Heading 2 → топ турнира */
+
+position: absolute;
+width: 218px;
+height: 39px;
+left: 0px;
+top: 0px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 38px;
+/* identical to box height, or 160% */
+display: flex;
+align-items: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* Border */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 545px;
+height: 266px;
+left: 565px;
+top: 59px;
+
+background: #15101D;
+border-radius: 19px;
+
+
+/* Turnament */
+
+position: absolute;
+width: 810px;
+height: 266px;
+left: -130.5px;
+top: 0px;
+
+background: linear-gradient(269.99deg, rgba(12, 1, 45, 0) 0.01%, rgba(12, 1, 45, 0.73) 99.99%), url(1920x250 копия.jpg);
+border-radius: 13.8649px;
+
+
+/* 1 */
+
+position: absolute;
+width: 75.89px;
+height: 83.19px;
+left: -34.07px;
+top: 109.46px;
+
+background: url(ChatGPT Image 21 авг. 2025 г., 02_01_25.png);
+filter: blur(0px);
+
+
+/* Rectangle */
+
+position: absolute;
+width: 82.46px;
+height: 72.24px;
+left: 403.77px;
+top: 231.32px;
+
+background: url(.png);
+
+
+/* Rectangle */
+
+position: absolute;
+width: 110.96px;
+height: 111.68px;
+left: 724.12px;
+top: 56.19px;
+
+background: url(.png);
+
+
+/* Background */
+
+position: absolute;
+width: 182px;
+height: 40px;
+left: 0px;
+top: 0px;
+
+background: #1F1B29;
+border-radius: 24px 0px;
+
+
+/* Максимальный Х */
+
+position: absolute;
+width: 135px;
+height: 24px;
+left: 24px;
+top: calc(50% - 24px/2 - 1px);
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #6D6E77;
+
+
+
+/* Heading 2 → Еженедельный турнир
+StimuleWeek */
+
+position: absolute;
+width: 380px;
+height: 22px;
+left: 24px;
+top: 56px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 100%;
+/* identical to box height, or 22px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Frame 377 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 235px;
+height: 38px;
+left: 24px;
+top: 90px;
+
+
+
+/* Призовой фонд: */
+
+width: 128px;
+height: 38px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 38px;
+/* identical to box height, or 238% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Strong → 100 000 ₽ */
+
+width: 99px;
+height: 28px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 140.4%;
+/* identical to box height, or 28px */
+display: flex;
+align-items: flex-end;
+letter-spacing: -0.03em;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2087326546 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 12px 8px 13px;
+gap: 10px;
+
+position: absolute;
+width: 196px;
+height: 36px;
+left: 24px;
+top: 144px;
+
+background: #1F1B29;
+border-radius: 7px;
+
+
+/* Subtract */
+
+width: 20px;
+height: 20px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Ellipse 2537 */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 13px;
+top: 8px;
+
+background: #D9D9D9;
+
+
+/* Vector */
+
+position: absolute;
+left: 11.73%;
+right: 86.56%;
+top: 38.43%;
+bottom: 43.06%;
+
+border: 1.76471px solid #357BF6;
+
+
+/* Скоро запустится */
+
+width: 141px;
+height: 16px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 100%;
+/* identical to box height, or 16px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Mask group */
+
+position: absolute;
+width: 170px;
+height: 310px;
+left: 940px;
+top: 15px;
+
+
+
+/* Rectangle 14755 */
+
+position: absolute;
+width: 353.72px;
+height: 333px;
+left: -91.07px;
+top: 0px;
+
+background: #D9D9D9;
+filter: blur(22.0055px);
+
+
+/* ChatGPT Image 23 июн. 2025 г., 20_37_52 1 */
+
+position: absolute;
+width: 324.64px;
+height: 346.86px;
+left: -38.34px;
+top: 7.97px;
+
+background: url(ChatGPT Image 21 авг. 2025 г., 01_43_39_Nero_AI_Image_Upscaler_Anime_Face.png);
+filter: blur(22.6577px);
+transform: matrix(-1, 0.01, 0.01, 1, 0, 0);
+
+
+/* 1 */
+
+position: absolute;
+width: 42px;
+height: 39px;
+left: 799px;
+top: 49px;
+
+background: url(ChatGPT Image 21 авг. 2025 г., 02_01_25.png);
+
+
+/* Button */
+
+position: absolute;
+width: 497px;
+height: 54px;
+left: 589px;
+top: 251px;
+
+background: #8D24D5;
+border-radius: 8px;
+
+
+/* Подробнее */
+
+position: absolute;
+width: 100px;
+height: 30px;
+left: calc(50% - 100px/2 - 0.5px);
+top: calc(50% - 30px/2 - 1px);
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 30px;
+/* identical to box height, or 167% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* баннер кубкт 2 */
+
+position: absolute;
+width: 292px;
+height: 74px;
+left: 253px;
+top: 38px;
+
+background: url(баннер кубкт.png);
+border-radius: 19px;
+
+
+/* Frame 2087326577 */
+
+position: absolute;
+width: 1110px;
+height: 538px;
+left: 405px;
+top: 690px;
+
+
+
+/* Heading 2 → топ турнира */
+
+position: absolute;
+width: 210px;
+height: 39px;
+left: 0px;
+top: 0px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 38px;
+/* identical to box height, or 160% */
+display: flex;
+align-items: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* история */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1110px;
+height: 479px;
+left: calc(50% - 1110px/2);
+top: 59px;
+overflow: scroll;
+
+background: #15101D;
+border: 1px solid rgba(62, 59, 71, 0.8);
+border-radius: 18px;
+
+
+/* Frame 378 */
+
+position: absolute;
+width: 1054px;
+height: 19px;
+left: 28px;
+top: 28px;
+
+
+
+/* Cell → Система */
+
+position: absolute;
+width: 75px;
+height: 24px;
+left: 0px;
+top: -3px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Cell → Система */
+
+position: absolute;
+width: 136px;
+height: 24px;
+left: 671px;
+top: -3px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Cell → Система */
+
+position: absolute;
+width: 120px;
+height: 24px;
+left: 342px;
+top: -3px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Cell → Система */
+
+position: absolute;
+width: 95px;
+height: 24px;
+left: 955px;
+top: -3px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Frame 2087326576 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 1054px;
+height: 376px;
+left: 28px;
+top: 75px;
+
+
+
+/* Line 3 */
+
+width: 1054px;
+height: 0px;
+
+border: 1px solid rgba(62, 59, 71, 0.8);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 335 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 159px;
+
+width: 1054px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Cell → Система */
+
+margin: 0 auto;
+width: 96px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 92px;
+height: 19px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 63px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: right;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame 2087326560 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 2px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+display: none;
+width: 86px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Component 9 */
+
+width: 22px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2087326575 */
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 4px;
+top: 4px;
+
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 0px;
+height: 14px;
+left: 7px;
+top: 0px;
+
+border: 2px solid rgba(255, 255, 255, 0.3);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 0px;
+height: 14px;
+left: 0px;
+top: 7px;
+
+border: 2px solid #5B5861;
+transform: rotate(90deg);
+
+
+/* Line 6 */
+
+width: 1054px;
+height: 0px;
+
+border: 1px solid rgba(62, 59, 71, 0.8);
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 2087326560 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 159px;
+
+width: 1054px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Cell → Система */
+
+margin: 0 auto;
+width: 96px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 92px;
+height: 19px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 63px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: right;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame 2087326560 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 2px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+display: none;
+width: 86px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Component 9 */
+
+width: 22px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2087326575 */
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 4px;
+top: 4px;
+
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 0px;
+height: 14px;
+left: 7px;
+top: 0px;
+
+border: 2px solid rgba(255, 255, 255, 0.3);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 0px;
+height: 14px;
+left: 0px;
+top: 7px;
+
+border: 2px solid #5B5861;
+transform: rotate(90deg);
+
+
+/* Line 7 */
+
+width: 1054px;
+height: 0px;
+
+border: 1px solid rgba(62, 59, 71, 0.8);
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 337 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 159px;
+
+width: 1054px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Cell → Система */
+
+margin: 0 auto;
+width: 96px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 92px;
+height: 19px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 63px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: right;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame 2087326560 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 2px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+display: none;
+width: 86px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Component 9 */
+
+width: 22px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2087326575 */
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 4px;
+top: 4px;
+
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 0px;
+height: 14px;
+left: 7px;
+top: 0px;
+
+border: 2px solid rgba(255, 255, 255, 0.3);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 0px;
+height: 14px;
+left: 0px;
+top: 7px;
+
+border: 2px solid #5B5861;
+transform: rotate(90deg);
+
+
+/* Line 8 */
+
+width: 1054px;
+height: 0px;
+
+border: 1px solid rgba(62, 59, 71, 0.8);
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 338 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 159px;
+
+width: 1054px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Cell → Система */
+
+margin: 0 auto;
+width: 96px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 92px;
+height: 19px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 63px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: right;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame 2087326560 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 2px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+display: none;
+width: 86px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Component 9 */
+
+width: 22px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2087326575 */
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 4px;
+top: 4px;
+
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 0px;
+height: 14px;
+left: 7px;
+top: 0px;
+
+border: 2px solid rgba(255, 255, 255, 0.3);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 0px;
+height: 14px;
+left: 0px;
+top: 7px;
+
+border: 2px solid #5B5861;
+transform: rotate(90deg);
+
+
+/* Line 9 */
+
+width: 1054px;
+height: 0px;
+
+border: 1px solid rgba(62, 59, 71, 0.8);
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 339 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 159px;
+
+width: 1054px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Cell → Система */
+
+margin: 0 auto;
+width: 96px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 92px;
+height: 19px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 63px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: right;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame 2087326560 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 2px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+display: none;
+width: 86px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Component 9 */
+
+width: 22px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2087326575 */
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 4px;
+top: 4px;
+
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 0px;
+height: 14px;
+left: 7px;
+top: 0px;
+
+border: 2px solid rgba(255, 255, 255, 0.3);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 0px;
+height: 14px;
+left: 0px;
+top: 7px;
+
+border: 2px solid #5B5861;
+transform: rotate(90deg);
+
+
+/* Line 10 */
+
+width: 1054px;
+height: 0px;
+
+border: 1px solid rgba(62, 59, 71, 0.8);
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 2087326561 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 159px;
+
+width: 1054px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Cell → Система */
+
+margin: 0 auto;
+width: 96px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 92px;
+height: 19px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 63px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: right;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame 2087326560 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 2px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+display: none;
+width: 86px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Component 9 */
+
+width: 22px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2087326575 */
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 4px;
+top: 4px;
+
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 0px;
+height: 14px;
+left: 7px;
+top: 0px;
+
+border: 2px solid rgba(255, 255, 255, 0.3);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 0px;
+height: 14px;
+left: 0px;
+top: 7px;
+
+border: 2px solid #5B5861;
+transform: rotate(90deg);
+
+
+/* Line 11 */
+
+width: 1054px;
+height: 0px;
+
+border: 1px solid rgba(62, 59, 71, 0.8);
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 2087326562 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 159px;
+
+width: 1054px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 13;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Cell → Система */
+
+margin: 0 auto;
+width: 96px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 92px;
+height: 19px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #47D524;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+margin: 0 auto;
+width: 63px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: right;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame 2087326560 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 2px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Cell → Сумма */
+
+display: none;
+width: 86px;
+height: 24px;
+
+/* текст */
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Component 9 */
+
+width: 22px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2087326575 */
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 4px;
+top: 4px;
+
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 0px;
+height: 14px;
+left: 7px;
+top: 0px;
+
+border: 2px solid rgba(255, 255, 255, 0.3);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 0px;
+height: 14px;
+left: 0px;
+top: 7px;
+
+border: 2px solid #5B5861;
+transform: rotate(90deg);
+
+
+/* Background */
+
+position: absolute;
+width: 86px;
+height: 2065px;
+left: 0px;
+top: 0px;
+overflow-y: scroll;
+
+background: #1F1B29;
+
+
+/* Link */
+
+position: absolute;
+width: 43.98px;
+height: 65px;
+left: calc(50% - 43.98px/2 - 0.01px);
+top: 12px;
+
+
+
+/* logo.svg */
+
+position: absolute;
+width: 40px;
+height: 40px;
+left: calc(50% - 40px/2 - 0.01px);
+top: calc(50% - 40px/2 - 12.5px);
+
+
+
+/* logo.svg fill */
+
+position: absolute;
+width: 40px;
+height: 40px;
+left: 0px;
+top: 0px;
+
+
+
+/* logo.svg */
+
+position: absolute;
+width: 40px;
+height: 40px;
+left: calc(50% - 40px/2);
+top: calc(50% - 40px/2);
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: url(b.png);
+
+
+/* Stimule */
+
+position: absolute;
+width: 44.31px;
+height: 21px;
+left: 0px;
+top: 44px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* Link */
+
+position: absolute;
+width: 62px;
+height: 62px;
+left: 12px;
+top: 109px;
+
+background: linear-gradient(90deg, #F9D423 0%, #E76603 50%, #F9D423 100%);
+border-radius: 8px;
+
+
+/* icon tournamnets */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: 17px;
+top: 10px;
+
+
+
+/* cup.svg fill */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: 0px;
+top: 0px;
+
+
+
+/* cup.svg */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2);
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.34%;
+top: 22.89%;
+bottom: 52.93%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 20.88%;
+right: 20.89%;
+top: 8.33%;
+bottom: 5.21%;
+
+background: #FFFFFF;
+
+
+/* Турниры */
+
+position: absolute;
+width: 51.59px;
+height: 16px;
+left: 5.38px;
+top: 41px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height, or 114% */
+display: flex;
+align-items: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* Link → Button */
+
+position: absolute;
+width: 62px;
+left: 12px;
+top: 203px;
+bottom: 1804px;
+
+border-radius: 8px;
+
+
+/* slots.svg */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2 - 12.5px);
+
+
+
+/* slots.svg fill */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: 0px;
+top: 0px;
+
+
+
+/* slots.svg */
+
+position: absolute;
+width: 28px;
+height: 25.85px;
+left: calc(50% - 28px/2);
+top: calc(50% - 25.85px/2 - 0px);
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0.64%;
+right: 0.64%;
+top: 1.39%;
+bottom: 1.39%;
+
+background: #FFFFFF;
+
+
+/* Slots */
+
+position: absolute;
+width: 32.41px;
+height: 21px;
+left: calc(50% - 32.41px/2 + 0.19px);
+top: 34.5px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* Link → Button */
+
+position: absolute;
+width: 62px;
+left: 12px;
+top: 277px;
+bottom: 1730px;
+
+border-radius: 8px;
+
+
+/* dice.svg */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2 - 12.5px);
+
+
+
+/* dice.svg fill */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: 0px;
+top: 0px;
+
+
+
+/* dice.svg */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2);
+
+
+
+/* Clip path group */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* a */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #000000;
+
+
+/* Group */
+
+position: absolute;
+left: 1.7%;
+right: 1.69%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 1.7%;
+right: 52.1%;
+top: 23.33%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 4.99%;
+right: 5%;
+top: 0%;
+bottom: 58.23%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 52.11%;
+right: 1.69%;
+top: 23.33%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Dice */
+
+position: absolute;
+width: 24.11px;
+height: 21px;
+left: calc(50% - 24.11px/2 + 0.17px);
+top: 34.5px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* Link → Button */
+
+position: absolute;
+width: 62px;
+left: 12px;
+top: 351px;
+bottom: 1656px;
+
+border-radius: 8px;
+
+
+/* mines.svg */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2 - 12.5px);
+
+
+
+/* mines.svg fill */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: 0px;
+top: 0px;
+
+
+
+/* mines.svg */
+
+position: absolute;
+width: 28px;
+height: 25.85px;
+left: calc(50% - 28px/2);
+top: calc(50% - 25.85px/2 - 0px);
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.33%;
+right: 3.34%;
+top: 1.31%;
+bottom: 1.31%;
+
+background: #FFFFFF;
+
+
+/* Mines */
+
+position: absolute;
+width: 32.84px;
+height: 21px;
+left: calc(50% - 32.84px/2 + 0.2px);
+top: 34.5px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* Link → Button */
+
+position: absolute;
+width: 62px;
+left: 12px;
+top: 425px;
+bottom: 1582px;
+
+border-radius: 8px;
+
+
+/* bubbles.svg */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2 - 12.5px);
+
+
+
+/* bubbles.svg fill */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: 0px;
+top: 0px;
+
+
+
+/* bubbles.svg */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2);
+
+
+
+/* Vector */
+
+position: absolute;
+left: 61.83%;
+right: 7.93%;
+top: 7.89%;
+bottom: 61.87%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 23.07%;
+right: 23.08%;
+top: 23.04%;
+bottom: 23.12%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 75.24%;
+right: 1.21%;
+top: 75.2%;
+bottom: 1.24%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 7.92%;
+right: 68.52%;
+top: 1.16%;
+bottom: 75.28%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.35%;
+right: 73.55%;
+top: 88.66%;
+bottom: 1.24%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 1.2%;
+right: 88.7%;
+top: 58.38%;
+bottom: 31.53%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 6.25%;
+right: 83.65%;
+top: 38.18%;
+bottom: 51.72%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 87.03%;
+right: 6.24%;
+top: 51.64%;
+bottom: 41.62%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 51.67%;
+right: 41.6%;
+top: 85.3%;
+bottom: 7.97%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 48.33%;
+right: 48.31%;
+top: 7.89%;
+bottom: 88.74%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 18.02%;
+right: 78.61%;
+top: 76.88%;
+bottom: 19.75%;
+
+background: #FFFFFF;
+
+
+/* Bubbles */
+
+position: absolute;
+width: 47.85px;
+height: 21px;
+left: calc(50% - 47.85px/2 + 0.17px);
+top: 34.5px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* Link → Button */
+
+position: absolute;
+width: 62px;
+left: 12px;
+top: 499px;
+bottom: 1508px;
+
+border-radius: 8px;
+
+
+/* wheel.svg */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2 - 12.5px);
+
+
+
+/* wheel.svg fill */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: 0px;
+top: 0px;
+
+
+
+/* wheel.svg */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2);
+
+
+
+/* Vector */
+
+position: absolute;
+left: 1.38%;
+right: 1.4%;
+top: 1.39%;
+bottom: 1.39%;
+
+background: #FFFFFF;
+
+
+/* Wheel */
+
+position: absolute;
+width: 35.33px;
+height: 21px;
+left: calc(50% - 35.33px/2 + 0.14px);
+top: 34.5px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* Link → Button */
+
+position: absolute;
+width: 62px;
+left: 12px;
+top: 573px;
+bottom: 1434px;
+
+border-radius: 8px;
+
+
+/* pinko.svg */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2 - 12.5px);
+
+
+
+/* pinko.svg fill */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: 0px;
+top: 0px;
+
+
+
+/* pinko.svg */
+
+position: absolute;
+width: 28px;
+height: 26.92px;
+left: calc(50% - 28px/2);
+top: calc(50% - 26.92px/2 - 0px);
+
+
+
+/* Vector */
+
+position: absolute;
+left: 1.41%;
+right: 1.42%;
+top: 2.94%;
+bottom: 1.47%;
+
+background: #FFFFFF;
+
+
+/* Plinko */
+
+position: absolute;
+width: 37.69px;
+height: 21px;
+left: calc(50% - 37.69px/2 + 0.16px);
+top: 34.5px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* Link → Button */
+
+position: absolute;
+width: 62px;
+left: 12px;
+top: 647px;
+bottom: 1360px;
+
+border-radius: 8px;
+
+
+/* help.svg */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2 - 12.5px);
+
+
+
+/* help.svg fill */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: 0px;
+top: 0px;
+
+
+
+/* help.svg */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2);
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.11%;
+right: 3.12%;
+top: 3.11%;
+bottom: 3.11%;
+
+background: #FFFFFF;
+
+
+/* Помощь */
+
+position: absolute;
+width: 50.68px;
+height: 21px;
+left: calc(50% - 50.68px/2 + 0.17px);
+top: 34.5px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* Frame 369 */
+
+position: absolute;
+width: 44.67px;
+height: 88px;
+left: 20.66px;
+top: 1199px;
+
+
+
+/* Button */
+
+position: absolute;
+width: 40px;
+height: 40px;
+left: 2.34px;
+top: 0px;
+
+background: rgba(255, 255, 255, 0.25);
+border-radius: 8px;
+
+
+/* mute */
+
+position: absolute;
+width: 10px;
+height: 16px;
+left: calc(50% - 10px/2);
+top: calc(50% - 16px/2);
+
+
+
+/* mute.svg fill */
+
+position: absolute;
+width: 10px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* mute.svg */
+
+position: absolute;
+width: 10px;
+height: 16px;
+left: calc(50% - 10px/2);
+top: calc(50% - 16px/2);
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.32%;
+right: 0.01%;
+top: 3.23%;
+bottom: 3.02%;
+
+background: #FFFFFF;
+
+
+/* Overlay */
+
+position: absolute;
+width: 44.67px;
+height: 32px;
+left: calc(50% - 44.67px/2);
+bottom: 0px;
+
+background: rgba(71, 213, 36, 0.145);
+border-radius: 8px;
+
+
+/* Overlay */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 8px;
+top: calc(50% - 16px/2);
+
+background: rgba(0, 255, 0, 0.063);
+border-radius: 8px;
+
+
+/* Background */
+
+position: absolute;
+width: 8px;
+height: 8px;
+left: calc(50% - 8px/2);
+top: calc(50% - 8px/2);
+
+background: #00FF00;
+border-radius: 4px;
+
+
+/* Background */
+
+position: absolute;
+width: 4px;
+height: 4px;
+left: calc(50% - 4px/2);
+top: calc(50% - 4px/2);
+
+background: #FFFFFF;
+border-radius: 2px;
+
+
+/* 1 */
+
+position: absolute;
+width: 8.04px;
+height: 24px;
+left: 29px;
+top: 4px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+

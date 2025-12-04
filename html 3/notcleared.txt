@@ -1,0 +1,152 @@
+$userId = 44024;
+$slots = -2729401.47;
+$balanceBefore = 0.5;
+$wagerBefore = 0;
+$slortWager = 0;
+$wagerStatus = 1;
+$latestSlot = 2185;
+$paymentId = 982893;
+$logId = 29064429;
+
+
+$userId = 87933;
+$slots = -186370.45;
+$balanceBefore = 0.49;
+$wagerBefore = 0;
+$slortWager = 0;
+$wagerStatus = 1;
+$latestSlot = 2763;
+$paymentId = 999881;
+$logId = 30223355;
+
+
+$userId = 74398;
+$slots = -157803.85;
+$balanceBefore = 0;
+$wagerBefore = 0;
+$slortWager = 0;
+$wagerStatus = 1;
+$latestSlot = 1852;
+$paymentId = 1002577;
+$logId = 30407238;
+
+
+$userId = 81784;
+$slots = -78768.45;
+$balanceBefore = 0;
+$wagerBefore = 13009.84;
+$slortWager = 0;
+$wagerStatus = 1;
+$latestSlot = 3612;
+$paymentId = 1004495;
+$logId = 30641014;
+
+// to be users
+$userId = 75319;
+$slots = -315806.56;
+$balanceBefore = 0;
+$wagerBefore = 37237;
+$slotWager = 0;
+$wagerStatus = 1;
+$latestSlot = 2261;
+$paymentId = 1006180;
+$logId = 30894279;
+//
+
+
+$userId = 44043;
+$slots = -125585.59;
+$balanceBefore = 0.06;
+$wagerBefore = 0;
+$slotWager = 0;
+$wagerStatus = 1;
+$latestSlot = 1351;
+$paymentId = 1008566;
+$logId = 31210181;
+
+$userId = 87933;
+$slots = -186370.45;
+$balanceBefore = 0.49;
+$wagerBefore = 0;
+$slotWager = 0;
+$wagerStatus = 1;
+$latestSlot = 2763;
+$paymentId = 1011817;
+$logId = 31921088;
+
+
+$userId = 94517;
+$slots = -118064.71;
+$balanceBefore = 0;
+$wagerBefore = 1085.35;
+$slotWager = 0;
+$wagerStatus = 1;
+$latestSlot = 494;
+$paymentId = 1012368;
+$logId = 32101447;
+
+
+
+$userId = 109226;
+$slots = -86499.84;
+$balanceBefore = 0;
+$wagerBefore = 619.15;
+$slotWager = 0;
+$wagerStatus = 1;
+$latestSlot = 494;
+$paymentId = 1013975;
+$logId = 32319519;
+
+$userId = 156452;
+$slots = -107163.93;
+$balanceBefore = 0.95;
+$wagerBefore = 1454.53;
+$slotWager = 0;
+$wagerStatus = 1;
+$latestSlot = 494;
+$paymentId = 1017671;
+$logId = 32932976;
+
+$userId = 75319;
+$slots = -318926.56;
+$balanceBefore = 0.5;
+$wagerBefore = 42169;
+$slotWager = 0;
+$wagerStatus = 1;
+$latestSlot = 2985;
+$paymentId = 1018439;
+$logId = 33042493;
+
+$userId = 84773;
+$slots = -81597.34;
+$balanceBefore = 0.36;
+$wagerBefore = 213.71;
+$slotWager = 0;
+$wagerStatus = 1;
+$latestSlot = 505;
+$paymentId = 1019363;
+$logId = 33148640;
+
+
+$userId = 87199;
+$slots = -140357.33;
+$balanceBefore = 0.36;
+$wagerBefore = 2430.8;
+$slotWager = 0;
+$wagerStatus = 1;
+$latestSlot = 494;
+$paymentId = 1022325;
+$logId = 33652203;
+
+
+$userId = 75637;
+$slots = -92162.82;
+$balanceBefore = 0.34;
+$wagerBefore = 370.5;
+$slotWager = 0;
+$wagerStatus = 1;
+$latestSlot = 2985;
+$paymentId = 1025298;
+$logId = 34002688;
+
+

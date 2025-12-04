@@ -1,0 +1,243 @@
+<template>
+  <teleport to="body">
+    <div v-if="modelValue" class="modal-backdrop" @click="onBackdrop">
+      <div
+        class="modal modal-figma"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Информация о турнире"
+        @keydown.esc="close"
+        tabindex="0"
+      >
+        <header class="modal__header">
+          <h3 class="modal__title">
+            {{ tournament?.title || tournament?.name || 'Турнир' }}
+          </h3>
+
+          <button class="modal__close" @click="close" aria-label="Закрыть">
+            ×
+          </button>
+        </header>
+
+        <section class="modal__body">
+          <div class="modal__row" v-if="tournament?.description">
+            <label class="modal__label">Описание</label>
+            <div class="modal__value">{{ tournament.description }}</div>
+          </div>
+
+          <div class="modal__row" v-if="tournament?.start_at">
+            <label class="modal__label">Начало</label>
+            <div class="modal__value">{{ formatDate(tournament.start_at) }}</div>
+          </div>
+
+          <div class="modal__row" v-if="tournament?.end_at">
+            <label class="modal__label">Окончание</label>
+            <div class="modal__value">{{ formatDate(tournament.end_at) }}</div>
+          </div>
+
+          <div class="modal__row" v-if="tournament?.prize_pool">
+            <label class="modal__label">Призовой фонд</label>
+            <div class="modal__value">{{ tournament.prize_pool }}</div>
+          </div>
+
+          <div class="modal__row" v-if="tournament?.buy_in">
+            <label class="modal__label">Взнос (buy‑in)</label>
+            <div class="modal__value">{{ tournament.buy_in }}</div>
+          </div>
+
+          <!-- Пример внутренней прокручиваемой панели в стиле макета -->
+          <div class="panel-scroll" v-if="history?.length">
+            <div class="panel-scroll__head">
+              <div class="col">Система</div>
+              <div class="col">Статус</div>
+              <div class="col">Сумма</div>
+              <div class="col">Дата</div>
+            </div>
+            <div class="panel-scroll__body">
+              <div class="row" v-for="(item, i) in history" :key="i">
+                <div class="col">{{ item.system }}</div>
+                <div class="col">{{ item.status }}</div>
+                <div class="col">{{ item.amount }}</div>
+                <div class="col">{{ formatDate(item.date) }}</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="modal__footer">
+          <button class="btn btn-secondary" @click="close">Закрыть</button>
+          <slot name="actions" :tournament="tournament"></slot>
+        </footer>
+      </div>
+    </div>
+  </teleport>
+</template>
+
+<script>
+export default {
+  name: 'TournamentModal',
+  props: {
+    modelValue: { type: Boolean, default: false }, // для v-model
+    tournament: { type: Object, default: () => ({}) },
+    // Необязательная история/лог — чтобы показать пример прокрутки панели из макета
+    history: { type: Array, default: () => [] }
+  },
+  emits: ['update:modelValue'],
+  methods: {
+    close() {
+      this.$emit('update:modelValue', false)
+    },
+    onBackdrop(e) {
+      if (e.target === e.currentTarget) this.close()
+    },
+    formatDate(iso) {
+      if (!iso) return ''
+      const d = new Date(iso)
+      if (Number.isNaN(d.getTime())) return ''
+      // Локально и читабельно
+      return d.toLocaleString(undefined, {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit'
+      })
+    }
+  }
+}
+</script>
+
+<style scoped>
+:root {
+  --figma-bg: #15101D;
+  --figma-border-outer: rgba(54, 52, 62, 0.8);
+  --figma-border-inner: rgba(62, 59, 71, 0.8);
+  --figma-text: #FFFFFF;
+}
+
+.modal-backdrop {
+  position: fixed; inset: 0; background: rgba(0,0,0,.55);
+  display: flex; align-items: center; justify-content: center; z-index: 1000;
+  padding: 16px;
+}
+
+/* Каркас модалки под макет: 601x729 с адаптацией под вьюпорт */
+.modal.modal-figma {
+  box-sizing: border-box;
+  width: min(601px, 100%);
+  max-height: min(729px, 92vh);
+  background: var(--figma-bg);
+  color: var(--figma-text);
+  border: 1px solid var(--figma-border-outer);
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  overflow: hidden;
+}
+
+/* Шапка: заголовок 24/36 Oswald и кнопка 28x28 */
+.modal__header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--figma-border-inner);
+}
+.modal__title {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+.modal__close {
+  width: 28px; height: 28px; border-radius: 8px;
+  display: grid; place-items: center;
+  background: rgba(54, 52, 62, 0.8);
+  border: 0; color: #fff; font-size: 18px; cursor: pointer;
+}
+.modal__close:hover { filter: brightness(1.1); }
+
+/* Тело: сетка из строк, подписи Rubik 16/23 и значения */
+.modal__body {
+  padding: 16px 20px;
+  display: grid;
+  gap: 14px;
+  font-family: 'Rubik', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+.modal__row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+.modal__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  color: #fff;
+  opacity: 0.9;
+}
+.modal__value {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 145%;
+}
+
+/* Внутренняя прокручиваемая панель «история» из макета */
+.panel-scroll {
+  box-sizing: border-box;
+  border: 1px solid var(--figma-border-inner);
+  border-radius: 8px;
+  background: var(--figma-bg);
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+  /* В макете высота 588px — делаем максимум, чтобы адаптировалось */
+  max-height: min(588px, 50vh);
+}
+.panel-scroll__head {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  opacity: 0.95;
+}
+.panel-scroll__body {
+  overflow: auto;
+  display: grid;
+  gap: 10px;
+  padding-right: 6px; /* для скроллбара */
+}
+.panel-scroll .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.panel-scroll .row:last-child { border-bottom: 0; }
+
+/* Подвал */
+.modal__footer {
+  padding: 16px 20px;
+  border-top: 1px solid var(--figma-border-inner);
+  display: flex; gap: 8px; justify-content: flex-end;
+}
+
+/* Кнопки */
+.btn {
+  padding: 8px 12px; border-radius: 8px; border: 1px solid var(--figma-border-inner);
+  background: #3E3B47; color: #fff; cursor: pointer;
+}
+.btn:hover { filter: brightness(1.05); }
+.btn-secondary {
+  background: transparent;
+  border-color: var(--figma-border-outer);
+}
+</style>
